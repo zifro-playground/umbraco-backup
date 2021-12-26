@@ -1,0 +1,167 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.CodeGuideItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+@{
+
+    string codeItemName = Model.Content.Name.ToLower();
+    string codeItemUrl = Model.Content.UrlName;
+    
+    var contentFromTag = Umbraco.TagQuery.GetContentByTag(codeItemUrl);
+    var tutorialsFromTag = contentFromTag.Where(x => x.DocumentTypeAlias == "tutorialPage");
+    var activitiesFromTag = contentFromTag.Where(x => x.DocumentTypeAlias == "activityItem");
+
+}
+
+<header class="bg-code-guide text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>@Model.Content.Parent.Name</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="breadcrumb" class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                @Html.Partial("BreadcrumbFromRoot")
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="code-description" style="padding-top:25px" class="no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+				<h3>@Model.Content.Name</h3>
+
+				<div class="card code-concept-summary">
+					<div class="card-body">
+						@Model.Content.GetPropertyValue("Summary")
+					</div>
+				</div>
+
+				<p>
+					@Model.Content.Text
+				</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@if (tutorialsFromTag.Any())
+{
+<section id="related-tutorials" class="bg-z-dark text-white no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+				<h3> Genomgång </h3>
+
+                @if (Umbraco.MemberIsLoggedOn())
+                {
+                    var memberService = ApplicationContext.Current.Services.MemberService;
+
+                    var userName = Membership.GetUser().ToString();
+                    var currentMember = memberService.GetByUsername(userName);
+                    var roles = memberService.GetAllRoles(currentMember.Id);
+
+                    if (tutorialsFromTag.Count() == 1){
+                        <p> Här är genomgången som går igenom @codeItemName. </p>
+                    }
+                    else{
+                        <p> Här är genomgångarna som går igenom @codeItemName. </p>
+                    }
+                    foreach(var tutorial in tutorialsFromTag)
+                    {
+                        if (roles.Contains("Teacher") || roles.Contains("Other"))
+                        {
+                            <a class="btn btn-light" href="@tutorial.Url" role="button">
+                                @tutorial.Name
+                                <span class="badge badge-time" style="opacity: 0.4;">
+                                    @tutorial.GetPropertyValue("timeDuration") min
+                                </span>
+                            </a>
+                        }
+                        else if (roles.Contains("Student"))
+                        {
+                            var videoID = tutorial.GetPropertyValue("PresentationVideoTutorialID");
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/@videoID?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>
+}
+
+@if (activitiesFromTag.Any())
+{
+<section id="related-activities" class="bg-activities text-white no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+				<h3> Öva på @codeItemName </h3>
+				<p> Dessa aktiviteter övar på @codeItemName. </p>
+
+                @if( Umbraco.MemberIsLoggedOn() )
+                {
+                    var memberService = ApplicationContext.Current.Services.MemberService;
+
+                    var userName = Membership.GetUser().ToString();
+                    var currentMember = memberService.GetByUsername(userName);
+                    var roles = memberService.GetAllRoles(currentMember.Id);
+
+                    foreach(var activity in activitiesFromTag)
+                    {
+                        string activityUrl;
+                        if( roles.Contains("Student") )
+                        {
+                            var playgroundActivity = activity.GetPropertyValue<IPublishedContent>("PlaygroundActivity");
+                            activityUrl = playgroundActivity.Url;
+                        }  
+                        else
+                        {
+                            activityUrl = activity.Url;
+                        }
+                        <a class="btn btn-light" href="@activityUrl" role="button">
+                            @activity.Name
+                        </a>
+                    }
+                }
+                else
+                {
+                    <p> Du måste vara inloggad för att testa aktiviteterna. </p>
+                }
+
+            </div>
+        </div>
+
+    </div>
+</section>
+}
+
+<section id="feedback" class="bg-z-dark text-white no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                @Html.Partial("FeedbackBox")
+                
+            </div>
+        </div>
+    </div>
+</section>

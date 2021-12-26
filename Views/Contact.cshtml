@@ -1,0 +1,56 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Contact>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section class="thin-section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title"> @Model.Content.SectionTitle </h2>
+                
+                <div><p>@Model.Content.LeftAlignedText</p></div>
+                
+                <div class="row">
+                    <div class="col-md-1 mx-auto text-center">
+                        <span style="font-size: 4rem;">
+                            <a href="https://www.instagram.com/zifro.se/"><i class="fab fa-instagram" target="_blank"></i></a>
+                        </span>
+                    </div>
+                    <div class="col-md-1 mx-auto text-center">
+                        <span style="font-size: 4rem;">
+                            <a href="https://www.facebook.com/zifro.se/" style="color: var(--zifro-dark)" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </span>
+                    </div>
+                    <div class="col-md-1 mx-auto text-center">
+                        <span style="font-size: 4rem;">
+                            <a href="https://www.linkedin.com/company/zifro/" style="color: var(--zifro-green)" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 mx-auto"><!-- EMPTY --></div>
+                    
+                    <div class="col-md-2 mx-auto text-center">
+                        <span style="font-size: 4rem;">
+                            <a href="mailto:info@zifro.se" target="_blank"><i class="fas fa-paper-plane"></i></a>
+                        </span>
+                    </div>
+                    
+                </div>
+
+                <div style="float:right; padding: 1rem 0rem;">@Model.Content.RightAlignedText</div>
+                
+            </div>
+        </div>    
+    </div>
+</section>
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+$('#sigup-newletter').click(function(){
+    console.log("hej")
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"666600f24e479fca5ac97538a","lid":"36b448a04d"}) })
+})
+</script>

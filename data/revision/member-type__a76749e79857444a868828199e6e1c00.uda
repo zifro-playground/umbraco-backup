@@ -1,0 +1,209 @@
+{
+  "Icon": "icon-user",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "0763a2f4-af0d-46df-95bf-6e53aab43298",
+      "Name": "Membership",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "212521bf-e3a9-4275-a400-884af2809d05",
+          "Alias": "umbracoMemberPasswordRetrievalAnswer",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Password Answer",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "29800179-a728-44a1-90d4-3471dddd3f68",
+          "Alias": "umbracoMemberLastPasswordChangeDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Password Change Date",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "67d29e1e-17b3-4a03-9aa7-9a805de2dc3b",
+          "Alias": "umbracoMemberComments",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Comments",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "bae0632c-9ab2-4845-8ab5-990af2d317aa",
+          "Alias": "umbracoMemberApproved",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Approved",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "c47b622f-61ad-4d2a-8b53-d9dc85f54e00",
+          "Alias": "umbracoMemberLastLockoutDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Lockout Date",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "cca62f11-f96b-4918-8a42-40bc402cfc26",
+          "Alias": "umbracoMemberLockedOut",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Locked Out",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "db5d7836-e129-4f4b-b246-dd5f05a2dd34",
+          "Alias": "umbracoMemberFailedPasswordAttempts",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Failed Password Attempts",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e658d65a-10e1-4d80-93c5-bcd0ae37f7e7",
+          "Alias": "umbracoMemberLastLogin",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Login Date",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "f37db24e-bf87-4182-8d18-75709dacbb02",
+          "Alias": "umbracoMemberPasswordRetrievalQuestion",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Password Question",
+          "SortOrder": 8,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "e6c6c949-5642-4eb1-b2e2-7b471f875c75",
+      "Name": "General Information",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "0f8a1fb8-211c-489b-8bbe-0efde69731e4",
+          "Alias": "municipality",
+          "DataType": "umb://data-type/88e4634003aa436e85dab1d86699ef16",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Municipality",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "12282632-ef81-49f0-bde7-a7a64e6de071",
+          "Alias": "resetGUID",
+          "DataType": "umb://data-type/5aa251483eb149e9af6a03a04a5943cf",
+          "Description": "Is set when user presses \"reset password\"",
+          "Mandatory": false,
+          "Name": "Reset GUID",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "3035b03d-a119-401b-8728-76933a3b7cfc",
+          "Alias": "phoneNumber",
+          "DataType": "umb://data-type/b643de983743462d97fc35e89872016c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Phone Number",
+          "SortOrder": 2,
+          "Validation": "^[0-9]*$"
+        },
+        {
+          "Key": "ad3928ab-5b56-4a4d-a47f-53b5b20183a9",
+          "Alias": "schoolName",
+          "DataType": "umb://data-type/b7247c35e49749ebb71c5dbdfff23a18",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "School Name",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "d1cc9c5d-b87e-4d81-a905-faa80e368a1e",
+          "Alias": "acceptedUserAgreement",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accepted User Agreement",
+          "SortOrder": 4,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://member-type/a76749e79857444a868828199e6e1c00",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/5aa251483eb149e9af6a03a04a5943cf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/88e4634003aa436e85dab1d86699ef16",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/b643de983743462d97fc35e89872016c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/b7247c35e49749ebb71c5dbdfff23a18",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Teacher",
+  "Alias": "teacher",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MemberTypeArtifact",
+  "__version": "2.0.14"
+}

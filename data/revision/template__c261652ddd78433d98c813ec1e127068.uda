@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/PlaygroundInfo.cshtml",
+  "Master": null,
+  "Udi": "umb://template/c261652ddd78433d98c813ec1e127068",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/PlaygroundInfo.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Playground Info",
+  "Alias": "PlaygroundInfo",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

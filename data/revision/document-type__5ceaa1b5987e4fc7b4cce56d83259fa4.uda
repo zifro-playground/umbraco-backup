@@ -1,0 +1,85 @@
+{
+  "DefaultTemplate": "umb://template/01e97b9e4db44b7496f64749a0df7c55",
+  "AllowedTemplates": [
+    "umb://template/01e97b9e4db44b7496f64749a0df7c55"
+  ],
+  "Icon": "icon-thumbnail-list color-blue",
+  "Thumbnail": "folder.png",
+  "Description": "This is an overview page of all available activities (\"Moment\")",
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+  "AllowedChildContentTypes": [
+    "umb://document-type/81c2b7d0498d4272b30b5562608adce2"
+  ],
+  "CompositionContentTypes": [
+    "umb://document-type/4655790d1e4143898db4be8d5439cc82"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "f7daca9b-2c9f-474a-bba2-c9da725eee4c",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "6b0f11f0-1e2d-4705-b0a5-a9001338b64d",
+          "Alias": "bottomText",
+          "DataType": "umb://data-type/b04c1b4f834c4741aefa00e25cfb1640",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Bottom",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "ba03eda3-ccb5-4126-93e2-fa9a964afe53",
+          "Alias": "activitiesOverviewIntro",
+          "DataType": "umb://data-type/54dda744a26d4d0d9d2ffc33a51ba1eb",
+          "Description": "An introductory text at the activity overview page.",
+          "Mandatory": false,
+          "Name": "Activities Overview Intro",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/5ceaa1b5987e4fc7b4cce56d83259fa4",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/54dda744a26d4d0d9d2ffc33a51ba1eb",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/b04c1b4f834c4741aefa00e25cfb1640",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4655790d1e4143898db4be8d5439cc82",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/81c2b7d0498d4272b30b5562608adce2",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/01e97b9e4db44b7496f64749a0df7c55",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Activity Overview",
+  "Alias": "activityOverview",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

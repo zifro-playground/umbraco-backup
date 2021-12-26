@@ -1,0 +1,73 @@
+{
+  "DefaultTemplate": "umb://template/c10d399ef4ed43d8a81bd01eafbca886",
+  "AllowedTemplates": [
+    "umb://template/c10d399ef4ed43d8a81bd01eafbca886"
+  ],
+  "Icon": "icon-forms-file-xml color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/7da4ff540ae6479eb090cb3042ce8986"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "3c319662-224d-40d0-af69-f49bf6db08ae",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "6ffc508f-abf5-4b10-81a3-495052f2a581",
+          "Alias": "text",
+          "DataType": "umb://data-type/d59538980b134cfda7b90aa0ca98b9b9",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "cc39a46b-828f-42ac-b0cf-9f0dbd39fa3c",
+          "Alias": "summary",
+          "DataType": "umb://data-type/a3ce722860be49809f97362f9dbf8618",
+          "Description": "A \"Too long – didn't read\" but at the top of the page. One sentence to summarize the concept.",
+          "Mandatory": false,
+          "Name": "Summary (TLDR)",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/014a2582acc24930b450e4dc1678fdd8",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/a3ce722860be49809f97362f9dbf8618",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/d59538980b134cfda7b90aa0ca98b9b9",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7da4ff540ae6479eb090cb3042ce8986",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/c10d399ef4ed43d8a81bd01eafbca886",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Code Guide Item",
+  "Alias": "codeGuideItem",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

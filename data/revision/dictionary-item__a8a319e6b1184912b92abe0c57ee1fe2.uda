@@ -1,0 +1,28 @@
+{
+  "ItemKey": "Results",
+  "ParentId": "f3b0642c-6206-4da2-8027-df987c3e589e",
+  "Translations": [
+    {
+      "Key": "a8a319e6-b118-4912-b92a-be0c57ee1fe2",
+      "Value": "Progress statistics",
+      "LanguageIsoCode": "en-US"
+    },
+    {
+      "Key": "a8a319e6-b118-4912-b92a-be0c57ee1fe2",
+      "Value": "Resultat",
+      "LanguageIsoCode": "sv-SE"
+    }
+  ],
+  "Name": "umb://dictionary-item/a8a319e6b1184912b92abe0c57ee1fe2",
+  "Udi": "umb://dictionary-item/a8a319e6b1184912b92abe0c57ee1fe2",
+  "Dependencies": [
+    {
+      "Udi": "umb://dictionary-item/f3b0642c62064da28027df987c3e589e",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

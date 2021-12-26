@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Statistics>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section class="thin-section bg-z-purple text-white" id="numbers">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-10 mx-auto">
+            
+                <div class="row">
+                    <div class="col-md-4 mx-auto text-center">
+                        <h1>@ApplicationContext.Current.Services.MemberService.GetMembersByGroup("Teacher").Count()</h1>
+                        <h5>@Model.Content.LeftDescription</h5>
+                    </div>
+                    <div class="col-md-4 mx-auto text-center">
+                        <h1>@Model.Content.CenterNumber</h1>
+                        <h5>@Model.Content.CenterDescription</h5>
+                    </div>
+                    <div class="col-md-4 mx-auto text-center">
+                        <h1>@Model.Content.RightNumber</h1>
+                        <h5>@Model.Content.RightDescription</h5>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+</section>

@@ -1,0 +1,73 @@
+{
+  "DefaultTemplate": "umb://template/62bb24b45d104f7d890d63111666fef1",
+  "AllowedTemplates": [
+    "umb://template/62bb24b45d104f7d890d63111666fef1"
+  ],
+  "Icon": "icon-sitemap",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type/44d1b720c7ed4eac962bc63a34af3835",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/44d1b720c7ed4eac962bc63a34af3835"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "0b7133df-9b48-4597-9da3-fbd32c490a43",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "9771d020-8b59-410e-87ee-16cc463d3003",
+          "Alias": "storyItemImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "This is the thumbnail of the story item, displayed in the timeline",
+          "Mandatory": false,
+          "Name": "Story item image",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "de5857a8-cbd5-4489-83f5-a78ebd3873cd",
+          "Alias": "timeStamp",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "This text is displayed over the image in the timeline.",
+          "Mandatory": false,
+          "Name": "Time Stamp",
+          "SortOrder": 3,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/556d6aad5dae4833ae7b3684e1a818b3",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/44d1b720c7ed4eac962bc63a34af3835",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/62bb24b45d104f7d890d63111666fef1",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Story item",
+  "Alias": "storyItem",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,81 @@
+{
+  "DefaultTemplate": "umb://template/a76ffee5e7d944a689f13994e35c0495",
+  "AllowedTemplates": [
+    "umb://template/a76ffee5e7d944a689f13994e35c0495"
+  ],
+  "Icon": "icon-voice",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "b48601f1-2e51-492a-9656-902074124b44",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "5753c863-6db6-4e26-9c5f-69ed94b7a64c",
+          "Alias": "blogPreviewText",
+          "DataType": "umb://data-type/00a9bc87f21f49028abc80370d8cad45",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Blog Preview text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "9827f1fd-bc28-4145-b24b-040bbe9b849b",
+          "Alias": "blogPreviewTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Blog Preview Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "fd1d8f32-cbb8-49ff-8bbc-ec39a857213d",
+          "Alias": "buttonText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button Text",
+          "SortOrder": 2,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/1e7083d741564f6e8828c72d7cb828cc",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/00a9bc87f21f49028abc80370d8cad45",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/a76ffee5e7d944a689f13994e35c0495",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Blog Preview",
+  "Alias": "blogPreview",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.CheckBoxList",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/30ae7d3d4a784e55a5fc26076b9ed517",
+  "Dependencies": [],
+  "Name": "Activity Item - Curriculum - Checkbox list",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

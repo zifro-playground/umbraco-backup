@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.UpgradePage>
+@using Zifro.Models
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+    string headerColor = Model.Content.GetPropertyValue<string>("headerColor");
+}
+
+<script src="~/scripts/form-validation.js"></script>
+
+<header class="text-white header-thin" style="background-color: #@headerColor">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+
+                <h1>@Model.Content.Name</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+
+                <h3>@Model.Content.PageTitle</h3>
+                <p>@Model.Content.PageText</p>
+
+                @{ Html.RenderPartial("~/Views/Partials/UpgradePartial.cshtml", new UpgradeViewModel()); }
+            </div>
+        </div>
+
+
+    </div>
+</section>

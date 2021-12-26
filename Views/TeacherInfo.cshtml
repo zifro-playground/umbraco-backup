@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TeacherInfo>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section id="teacher">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title" style="color: var(--teacher-color)"> 
+                    @Model.Content.SectionTitle
+                </h2>
+
+                <h6 class="section-subtitle mb-4">
+                    @Model.Content.SectionSubtitle
+                </h6>
+                
+                <div class="row justify-content-around">
+                    
+                    <div class="col-lg-4 text-center">
+                        <div class="icon-wrapper d-flex align-items-end mb-4">
+                            <img src="/media/1033/teacher_ft_codeguide.svg" alt="codeguide-icon" class="center" height="120px">
+                        </div>
+                        <h4>@Umbraco.GetDictionaryValue("CodeGuide")</h4>
+                        <p>@Model.Content.GetPropertyValue("codeGuideText")</p>
+                    </div>
+                    
+                    <div class="col-lg-4 text-center">
+                        <div class="icon-wrapper d-flex align-items-end mb-4">
+                            <img src="/media/1030/teacher_ft_activities.svg" alt="activity-icon" class="center" height="140px">
+                        </div>
+                        <h4>@Umbraco.GetDictionaryValue("Activities")</h4>
+                        <p>@Model.Content.GetPropertyValue("activityText")</p>
+                    </div>
+                    
+                    <div class="col-lg-4 text-center">
+                        <div class="icon-wrapper d-flex align-items-end mb-4">
+                            <img src="/media/1032/teacher_ft_results.svg" alt="results-icon" class="center" height="110px">
+                        </div>
+                        <h4>@Umbraco.GetDictionaryValue("Results")</h4>
+                        <p>@Model.Content.GetPropertyValue("resultsText")</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+</section>

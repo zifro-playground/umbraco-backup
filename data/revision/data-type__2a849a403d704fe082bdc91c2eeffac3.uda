@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.MediaPicker2",
+  "DatabaseType": 0,
+  "PreValues": {
+    "disableFolderSelect": null,
+    "multiPicker": null,
+    "onlyImages": null,
+    "startNodeId": ""
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/2a849a403d704fe082bdc91c2eeffac3",
+  "Dependencies": [],
+  "Name": "Selling points - Media Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

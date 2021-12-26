@@ -1,0 +1,90 @@
+{
+  "DefaultTemplate": "umb://template/c5fea7c1b5ee4b93b51d6a008b4cfe29",
+  "AllowedTemplates": [
+    "umb://template/c5fea7c1b5ee4b93b51d6a008b4cfe29"
+  ],
+  "Icon": "icon-logout",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+  "AllowedChildContentTypes": [
+    "umb://document-type/983f461e264749f692d8c3100746a4e9",
+    "umb://document-type/bfaa9ccca5e44bd1a180a34aef4c7ce1",
+    "umb://document-type/d5012f11d35b4797b8b92cb7d454a205"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "aac9db7a-7bfa-4cb7-b544-b5dcd57b5290",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "4e036d95-fa5d-4b01-9095-ad75b7e6049c",
+          "Alias": "text",
+          "DataType": "umb://data-type/3179995b5f114c9e89f8557f715478f6",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "a91dd29d-b278-4973-9d46-7d1aaffdf935",
+          "Alias": "title",
+          "DataType": "umb://data-type/20d2dad0f33a44049c2af25d1b692e6b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/5ce369cb581040c3a3e1eaca22086657",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/20d2dad0f33a44049c2af25d1b692e6b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3179995b5f114c9e89f8557f715478f6",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/983f461e264749f692d8c3100746a4e9",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/bfaa9ccca5e44bd1a180a34aef4c7ce1",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/d5012f11d35b4797b8b92cb7d454a205",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/c5fea7c1b5ee4b93b51d6a008b4cfe29",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Login Page",
+  "Alias": "loginPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

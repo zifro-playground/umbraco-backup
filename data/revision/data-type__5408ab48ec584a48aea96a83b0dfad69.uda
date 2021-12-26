@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.MarkdownEditor",
+  "DatabaseType": 0,
+  "PreValues": {
+    "defaultValue": null,
+    "preview": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/5408ab48ec584a48aea96a83b0dfad69",
+  "Dependencies": [],
+  "Name": "About us - About us text - Markdown editor",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

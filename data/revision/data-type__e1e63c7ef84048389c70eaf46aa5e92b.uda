@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.CheckBoxList",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/e1e63c7ef84048389c70eaf46aa5e92b",
+  "Dependencies": [],
+  "Name": "Activity Item - Preparations - Checkbox list",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

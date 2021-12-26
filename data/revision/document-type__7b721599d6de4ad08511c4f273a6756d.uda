@@ -1,0 +1,131 @@
+{
+  "DefaultTemplate": "umb://template/6d9704a61afd4d9d9188915bd11eca13",
+  "AllowedTemplates": [
+    "umb://template/6d9704a61afd4d9d9188915bd11eca13"
+  ],
+  "Icon": "icon-message-unopened",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "6c7d2b24-ef04-4140-b07f-09fb083e9bd5",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "26241fde-eb1a-454d-8b06-7634a8bfd848",
+          "Alias": "sectionSubtitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Subtitle",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "32a9470c-fa5a-4061-9520-a302be14df38",
+          "Alias": "buttonColor",
+          "DataType": "umb://data-type/bfbb6ca6414d4ecba2273b902252b52b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button Color",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "625c9885-e264-4bc6-8c56-3740074caacf",
+          "Alias": "buttonText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button Text",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "78a34fd4-e3a2-4202-bd1e-f98ddb5473b2",
+          "Alias": "backgroundColor",
+          "DataType": "umb://data-type/bfbb6ca6414d4ecba2273b902252b52b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Background Color",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "bf68beb0-5380-4c3d-ab59-a3d212fcd39a",
+          "Alias": "text",
+          "DataType": "umb://data-type/cecdc86bf8b44f219a1909ce6646d039",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "db11abd8-3836-46c6-95fc-ffbb3ff1bee8",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "e061cff3-7e61-4d73-9d54-ecd334c10fb9",
+          "Alias": "sectionID",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section ID",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "ede776e5-df83-468f-9a2f-4c4143e3cd66",
+          "Alias": "buttonLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button Link",
+          "SortOrder": 6,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/7b721599d6de4ad08511c4f273a6756d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bfbb6ca6414d4ecba2273b902252b52b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/cecdc86bf8b44f219a1909ce6646d039",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/6d9704a61afd4d9d9188915bd11eca13",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Generic Section",
+  "Alias": "genericSection",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

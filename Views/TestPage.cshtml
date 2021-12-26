@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TestPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header class="bg-yellow text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>@Model.Content.Name <span class="badge badge-secondary">Beta</span> </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section style="padding-top:30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <h2>
+                    This is a cool page
+                </h2>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,71 @@
+{
+  "DefaultTemplate": "umb://template/45a4ffc490fb4cb0b303472f568b5536",
+  "AllowedTemplates": [
+    "umb://template/45a4ffc490fb4cb0b303472f568b5536"
+  ],
+  "Icon": "icon-navigation-top",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "0a8ed67e-0c7b-4402-9a37-b48a7ac41f9e",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "5e955e2f-7cbe-4fcc-a033-b0728d15141c",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "7c3b5ee3-8ad7-45e7-9e89-655bc7354c2b",
+          "Alias": "subtitle",
+          "DataType": "umb://data-type/12c3e9a0a6494db29f820e1187d28dca",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Subtitle",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/4ec49076a94b470d8ebc7400b09af8bf",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/12c3e9a0a6494db29f820e1187d28dca",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/45a4ffc490fb4cb0b303472f568b5536",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Header",
+  "Alias": "header",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

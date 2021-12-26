@@ -1,0 +1,66 @@
+{
+  "DefaultTemplate": "umb://template/c261652ddd78433d98c813ec1e127068",
+  "AllowedTemplates": [
+    "umb://template/c261652ddd78433d98c813ec1e127068"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "cd85c2a4-830d-461e-8397-1bceb31d6af0",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "0b98cf8a-a0c4-4917-83c5-d883f2b3d529",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "0d38ce4b-60bf-448a-b2bd-6f7c317d5e9b",
+          "Alias": "sectionSubtitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Subtitle",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/ed8c09eb8127449c9a0fd67326344495",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/c261652ddd78433d98c813ec1e127068",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Playground Info",
+  "Alias": "playgroundInfo",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

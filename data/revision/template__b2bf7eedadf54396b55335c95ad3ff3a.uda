@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/Kodkvall.cshtml",
+  "Master": null,
+  "Udi": "umb://template/b2bf7eedadf54396b55335c95ad3ff3a",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Kodkvall.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Kodkvall",
+  "Alias": "Kodkvall",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

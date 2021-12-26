@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.MultipleTextstring",
+  "DatabaseType": 0,
+  "PreValues": {
+    "0": "{\"Minimum\":0,\"Maximum\":0}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/7a5b8bf3f0544ab9ae8c85d6c9208382",
+  "Dependencies": [],
+  "Name": "Upgrade Page - Codes - Repeatable textstrings",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

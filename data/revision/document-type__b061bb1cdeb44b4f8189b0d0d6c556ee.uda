@@ -1,0 +1,57 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-post-it color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+    "umb://document-type/4655790d1e4143898db4be8d5439cc82"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "6b03b11a-aedd-457e-b6f5-0a9cd7024682",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "2c33cb4d-ddcf-40e8-9d31-97c22cc98f0d",
+          "Alias": "richText",
+          "DataType": "umb://data-type/dbcb0707021d4cd4ba8b5cc891516c28",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Rich Text",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b061bb1cdeb44b4f8189b0d0d6c556ee",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/dbcb0707021d4cd4ba8b5cc891516c28",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4655790d1e4143898db4be8d5439cc82",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Articulate Rich Text",
+  "Alias": "ArticulateRichText",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

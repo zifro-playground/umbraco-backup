@@ -1,0 +1,86 @@
+{
+  "DefaultTemplate": "umb://template/901c33784c734da2a80f879830bf11db",
+  "AllowedTemplates": [
+    "umb://template/901c33784c734da2a80f879830bf11db"
+  ],
+  "Icon": "icon-user-females",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "c6f5e8ac-a496-4b40-b210-aa617c643a5c",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "2e2b19cd-a33e-409e-94b3-bafd1984b0c7",
+          "Alias": "textRight",
+          "DataType": "umb://data-type/bc29c4fcceda4309911e74191923e9b9",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text Right",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "7fe0e520-f37b-4127-8457-a87bb3b9d55d",
+          "Alias": "textBottom",
+          "DataType": "umb://data-type/c262ce2edd894c26a1510198db7fdefb",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text Bottom",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "b906c98d-4b8a-45a7-bfc1-f226834c0808",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/a40daf3683934d8d88ebdf3aa3567492",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bc29c4fcceda4309911e74191923e9b9",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c262ce2edd894c26a1510198db7fdefb",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/901c33784c734da2a80f879830bf11db",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Team",
+  "Alias": "team",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

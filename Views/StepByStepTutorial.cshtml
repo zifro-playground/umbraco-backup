@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+<header class="bg-blue text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>@Model.Content.Name</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto" style="padding:0px;">
+                
+                <h2>
+                    Tutorial
+                </h2>
+                <p>
+                    @Umbraco.Field("stepByStepText")
+                </p>
+            
+            </div>
+        </div>    
+    </div>
+</section>
+
+<section>
+            
+</section>

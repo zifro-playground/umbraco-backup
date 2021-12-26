@@ -1,0 +1,86 @@
+{
+  "DefaultTemplate": "umb://template/db60d50c83644126b2b68f6ad8509aee",
+  "AllowedTemplates": [
+    "umb://template/db60d50c83644126b2b68f6ad8509aee"
+  ],
+  "Icon": "icon-paper-plane-alt",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "e98b673d-827b-4600-af49-b632ff4cda94",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "0ddb9665-9403-44a0-972b-9554fc597faa",
+          "Alias": "rightAlignedText",
+          "DataType": "umb://data-type/d6d2dddda9f940979b7e7a64efdbe31e",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Right Aligned Text",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "63a1324c-3367-43a9-9a04-d2d0964a7208",
+          "Alias": "leftAlignedText",
+          "DataType": "umb://data-type/1327d0f1b60d4cdd83efd89b34cec8a5",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Left Aligned Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "8280b285-18f8-415e-b5b0-ac57b453ce0c",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/beeb6dee4876463baa3fcb2ffae6994b",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/1327d0f1b60d4cdd83efd89b34cec8a5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/d6d2dddda9f940979b7e7a64efdbe31e",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/db60d50c83644126b2b68f6ad8509aee",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Contact",
+  "Alias": "contact",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

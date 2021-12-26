@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/ResetPasswordPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/d6c36158d9824d5d9940487bc4a84460",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/ResetPasswordPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Reset Password Page",
+  "Alias": "ResetPasswordPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/Statistics.cshtml",
+  "Master": null,
+  "Udi": "umb://template/fdd56ecf9c6e459292b44793e168db87",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Statistics.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Statistics",
+  "Alias": "Statistics",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

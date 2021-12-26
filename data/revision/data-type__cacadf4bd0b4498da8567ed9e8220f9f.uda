@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.ContentPicker2",
+  "DatabaseType": 1,
+  "PreValues": {
+    "showOpenButton": "0",
+    "startNodeId": "umb://document/a26b9cd8d9f9421b90067b3b5ab148fa"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/cacadf4bd0b4498da8567ed9e8220f9f",
+  "Dependencies": [],
+  "Name": "Activity Item - Playground Activity - Content Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

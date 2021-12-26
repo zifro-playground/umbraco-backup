@@ -1,0 +1,63 @@
+{
+  "_from": "octicons",
+  "_id": "octicons@7.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-JI9MystfVipyfovRAzK6kC6SV8VoRQsc860XAejt574WtSW3Gcve+1vguAPVYiiLAqN4JiT0QR1+Lduzve5CnQ==",
+  "_location": "/octicons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "octicons",
+    "name": "octicons",
+    "escapedName": "octicons",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/octicons/-/octicons-7.1.0.tgz",
+  "_shasum": "ed332a537fd5f6141352c453aad8a6679cea1638",
+  "_spec": "octicons",
+  "_where": "/Users/saradanielsson/Documents/GITKRAKEN/deff2680-6fcd-49d4-a774-ccdda47d03cc",
+  "author": {
+    "name": "GitHub Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/primer/octicons/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  },
+  "deprecated": false,
+  "description": "A scalable set of icons handcrafted with <3 by GitHub.",
+  "files": [
+    "index.js",
+    "index.scss",
+    "build"
+  ],
+  "homepage": "https://octicons.github.com",
+  "keywords": [
+    "GitHub",
+    "icons",
+    "svg",
+    "octicons"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "octicons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primer/octicons.git"
+  },
+  "scripts": {
+    "prepare": "../../script/build-svg ./build && ../../script/build-json ./build && cp index.scss build/build.css",
+    "test": "ava --verbose 'tests/*.js'"
+  },
+  "style": "index.scss",
+  "version": "7.1.0"
+}

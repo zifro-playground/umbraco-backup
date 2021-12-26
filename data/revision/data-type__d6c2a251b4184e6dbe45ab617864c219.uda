@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TrueFalse",
+  "DatabaseType": 2,
+  "PreValues": {
+    "default": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/d6c2a251b4184e6dbe45ab617864c219",
+  "Dependencies": [],
+  "Name": "Generic Page - Hide - TrueFalse (1)",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

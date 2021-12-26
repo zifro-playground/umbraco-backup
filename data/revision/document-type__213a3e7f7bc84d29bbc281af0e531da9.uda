@@ -1,0 +1,111 @@
+{
+  "DefaultTemplate": "umb://template/21b4485d811747fe949654a7af1ea842",
+  "AllowedTemplates": [
+    "umb://template/21b4485d811747fe949654a7af1ea842"
+  ],
+  "Icon": "icon-bulleted-list color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "3e7908f8-9816-4916-b0d7-570fc20b8103",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "2d937e5b-c6eb-458e-97dd-ce9996ad4d30",
+          "Alias": "presentationSlidesLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Link to slides (long link obtained from \"Publicera på webben\")",
+          "Mandatory": false,
+          "Name": "Presentation Slides Link",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "56847e7d-0665-4ad3-9907-3c790d6f5feb",
+          "Alias": "stepByStepText",
+          "DataType": "umb://data-type/fd3ef84db7174b43a4064b75a50da839",
+          "Description": "This is the text tutorial.",
+          "Mandatory": false,
+          "Name": "Step by step Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "608f00d4-a74e-484c-a4bc-61d5bb6c5305",
+          "Alias": "presentationVideoTutorialID",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The youtube ID. Example: \n7vv1lHmlI5U",
+          "Mandatory": false,
+          "Name": "Video Tutorial ID",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "6324595b-dd17-409f-a4b0-2a2d4b5ff928",
+          "Alias": "timeDuration",
+          "DataType": "umb://data-type/2227df8e379a48b3addcbfda21b00a90",
+          "Description": "Time it takes to go through the tutorial with the class (in minutes)",
+          "Mandatory": false,
+          "Name": "Time Duration",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "e7ddb2f7-30b4-4041-bb6e-ea80bbc8e969",
+          "Alias": "codeConceptTag",
+          "DataType": "umb://data-type/eb9dc2aed4ae46b8928b22e83d4870da",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Code concept tag",
+          "SortOrder": 4,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/213a3e7f7bc84d29bbc281af0e531da9",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/2227df8e379a48b3addcbfda21b00a90",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/eb9dc2aed4ae46b8928b22e83d4870da",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/fd3ef84db7174b43a4064b75a50da839",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/21b4485d811747fe949654a7af1ea842",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Tutorial Page",
+  "Alias": "tutorialPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

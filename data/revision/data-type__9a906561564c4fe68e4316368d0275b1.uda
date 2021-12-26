@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.MarkdownEditor",
+  "DatabaseType": 0,
+  "PreValues": {
+    "defaultValue": null,
+    "preview": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/9a906561564c4fe68e4316368d0275b1",
+  "Dependencies": [],
+  "Name": "Selling points - Longer text 3 - Markdown editor",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

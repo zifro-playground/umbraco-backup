@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/PlaygroundHome.cshtml",
+  "Master": "umb://template/1780414df60e43fcbcdef727e3b53428",
+  "Udi": "umb://template/c9d85ec0dfa44fcc99e4010973901c9d",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/1780414df60e43fcbcdef727e3b53428",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/PlaygroundHome.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Playground Home",
+  "Alias": "PlaygroundHome",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

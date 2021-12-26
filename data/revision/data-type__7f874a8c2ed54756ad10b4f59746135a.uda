@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.MarkdownEditor",
+  "DatabaseType": 0,
+  "PreValues": {
+    "defaultValue": null,
+    "preview": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/7f874a8c2ed54756ad10b4f59746135a",
+  "Dependencies": [],
+  "Name": "Teacher Home - Playground Info - Markdown editor",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/CallToAction.cshtml",
+  "Master": null,
+  "Udi": "umb://template/21c18d5af9d144798acf0213b86a4634",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/CallToAction.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Call to Action",
+  "Alias": "CallToAction",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

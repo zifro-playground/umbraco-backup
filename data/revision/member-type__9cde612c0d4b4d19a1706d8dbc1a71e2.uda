@@ -1,0 +1,194 @@
+{
+  "Icon": "icon-user",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "7a00911c-09e1-4e83-93f6-a96033e6d5b5",
+      "Name": "General Information",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "60cfb169-d1f6-4481-8d63-bce8bba9abbb",
+          "Alias": "resetGUID",
+          "DataType": "umb://data-type/5aa251483eb149e9af6a03a04a5943cf",
+          "Description": "Is set when user presses \"reset password\"",
+          "Mandatory": false,
+          "Name": "Reset GUID",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "c73f2750-4e64-43f7-a742-45f5fe2fa5f6",
+          "Alias": "acceptedUserAgreement",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accepted User Agreement",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "ee6a0e1c-e411-45c6-a5dc-22a2063f9952",
+          "Alias": "grade",
+          "DataType": "umb://data-type/f09babc078984d9089d07895ae07eb0d",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Grade",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "b1f46566-d1c7-41ef-ac29-643121a5e602",
+      "Name": "Membership",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "008200b4-0922-4575-a9ae-e9f6954a9bf6",
+          "Alias": "umbracoMemberFailedPasswordAttempts",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Failed Password Attempts",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "2562b1b7-f854-4b4b-9772-f6f595027cee",
+          "Alias": "umbracoMemberLockedOut",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Locked Out",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "4d6ee3b4-16f7-48fd-ba4e-3de6bfee4012",
+          "Alias": "umbracoMemberLastLockoutDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Lockout Date",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "50cb72b6-0d3e-4c64-b1b6-636da59f2956",
+          "Alias": "umbracoMemberLastLogin",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Login Date",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "564ec890-8216-41ef-9ff8-c4529e701370",
+          "Alias": "umbracoMemberLastPasswordChangeDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Password Change Date",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "79988a4c-4d6d-45e3-8a5e-3f228463226a",
+          "Alias": "umbracoMemberApproved",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Approved",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "9ff5620a-8c54-41fb-a1ce-bffef0ed2b9d",
+          "Alias": "resetTimeStamp",
+          "DataType": "umb://data-type/e8e71973b7f3404d8afcea3ad435c6de",
+          "Description": "Is set when user press \"reset password\" from \"ForgotPasswordPage\"",
+          "Mandatory": false,
+          "Name": "Reset Time Stamp",
+          "SortOrder": 9,
+          "Validation": null
+        },
+        {
+          "Key": "b0ff376b-6f96-4542-abb3-670a5bbc9062",
+          "Alias": "umbracoMemberPasswordRetrievalAnswer",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Password Answer",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "d75e5e15-6265-49ed-b579-f2e766a80901",
+          "Alias": "umbracoMemberComments",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Comments",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "e265f7da-af59-4ba9-8e4e-e582f31293a4",
+          "Alias": "umbracoMemberPasswordRetrievalQuestion",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Password Question",
+          "SortOrder": 8,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://member-type/9cde612c0d4b4d19a1706d8dbc1a71e2",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/5aa251483eb149e9af6a03a04a5943cf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/e8e71973b7f3404d8afcea3ad435c6de",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f09babc078984d9089d07895ae07eb0d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Student",
+  "Alias": "student",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MemberTypeArtifact",
+  "__version": "2.0.14"
+}

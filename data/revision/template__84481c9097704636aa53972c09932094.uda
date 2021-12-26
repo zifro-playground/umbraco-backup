@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/SkolonLoginPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/84481c9097704636aa53972c09932094",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/SkolonLoginPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Skolon Login Page",
+  "Alias": "SkolonLoginPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,78 @@
+{
+  "DefaultTemplate": "umb://template/c9d85ec0dfa44fcc99e4010973901c9d",
+  "AllowedTemplates": [
+    "umb://template/c9d85ec0dfa44fcc99e4010973901c9d"
+  ],
+  "Icon": "icon-play color-green",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/312927e02abd495788b8ad9622c05e06",
+  "AllowedChildContentTypes": [
+    "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "ebffcb52-4995-476f-b35b-e00ee431266c",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "745254d9-40bc-45ce-ab49-c7ff118cb9a6",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "b3cd0d84-81b3-4bc6-b074-ea2753e2d2d9",
+          "Alias": "introText",
+          "DataType": "umb://data-type/a0147ff5352943c6895553a493a38d65",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Intro text",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/175093061cce4899a23faa5dbddee312",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/a0147ff5352943c6895553a493a38d65",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/312927e02abd495788b8ad9622c05e06",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/c9d85ec0dfa44fcc99e4010973901c9d",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Playground Home",
+  "Alias": "playgroundHome",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

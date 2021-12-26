@@ -1,0 +1,25 @@
+{
+  "EditorAlias": "Umbraco.DropDown",
+  "DatabaseType": 1,
+  "PreValues": {
+    "0": "Åk 1",
+    "1": "Åk 2",
+    "10": "Åk 2 - gymnasiet",
+    "11": "Åk 3 - gymnasiet",
+    "2": "Åk 3",
+    "3": "Åk 4",
+    "4": "Åk 5",
+    "5": "Åk 6",
+    "6": "Åk 7",
+    "7": "Åk 8",
+    "8": "Åk 9",
+    "9": "Åk 1 - gymnasiet"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f09babc078984d9089d07895ae07eb0d",
+  "Dependencies": [],
+  "Name": "Student - Grade - Dropdown list",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

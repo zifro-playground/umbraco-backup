@@ -1,0 +1,106 @@
+{
+  "DefaultTemplate": "umb://template/fdd56ecf9c6e459292b44793e168db87",
+  "AllowedTemplates": [
+    "umb://template/fdd56ecf9c6e459292b44793e168db87"
+  ],
+  "Icon": "icon-chart-curve",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "3865c63b-cb16-4fdb-9ee3-38e7baa7fa12",
+      "Name": "Numbers",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "21c2d3b2-a542-4953-9ae1-e79dc822ac2a",
+          "Alias": "centerNumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Center Number",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "54be619d-0591-40c8-acf6-1e5804313a92",
+          "Alias": "rightDescription",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Right Description",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "8e6ebea6-549c-43a1-804b-7bbefe76b433",
+          "Alias": "leftDescription",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Left Description",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "b0ed4206-cdcf-4dc1-a727-5aeb47a64abd",
+          "Alias": "rightNumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Right Number",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "d45f9c45-94e1-4106-b801-6268095e675c",
+          "Alias": "leftNumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Left Number",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "d8a4434a-150f-4b07-b78a-38669add9abf",
+          "Alias": "centerDescription",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Center Description",
+          "SortOrder": 3,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/23aed515867148eb8b6a9573e09b1e95",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/fdd56ecf9c6e459292b44793e168db87",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Statistics",
+  "Alias": "statistics",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,17 @@
+{
+  "ItemKey": "ZifroTeacher",
+  "ParentId": "a1c2e090-729b-4d58-9914-0b628fcfca9d",
+  "Translations": [],
+  "Name": "umb://dictionary-item/f3b0642c62064da28027df987c3e589e",
+  "Udi": "umb://dictionary-item/f3b0642c62064da28027df987c3e589e",
+  "Dependencies": [
+    {
+      "Udi": "umb://dictionary-item/a1c2e090729b4d5899140b628fcfca9d",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

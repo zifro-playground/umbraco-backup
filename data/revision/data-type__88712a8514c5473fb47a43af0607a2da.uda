@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.MultipleTextstring",
+  "DatabaseType": 0,
+  "PreValues": {
+    "0": "{\"Minimum\":2,\"Maximum\":0}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/88712a8514c5473fb47a43af0607a2da",
+  "Dependencies": [],
+  "Name": "Lesson Module - Preparations - Repeatable textstrings",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

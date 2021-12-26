@@ -1,0 +1,355 @@
+/*  ----------------------------------------
+**					COLORS
+**  ----------------------------------------
+*/
+
+:root {
+	--zifro-dark:  		rgba(49, 76, 83, 1);
+	--zifro-dark2:		rgba(27, 54, 60, 1);
+	--zifro-purple: 	rgba(152, 66, 165, 1);
+	--zifro-green:  	rgba(35, 178, 147, 1);
+	--zifro-green-l:	rgba(55, 185, 156, 1);
+	--zifro-orange: 	rgba(255, 150, 76, 1);
+	--zifro-ogange-d:	rgba(243, 133, 55, 1);
+    --zifro-blue:   	rgba(35, 128, 178, 1);
+    --zifro-gray:       rgba(237, 240, 241,1);
+
+	--playground-color: var(--zifro-green);
+	--teacher-color: 	var(--zifro-purple);
+	--code-guide-color: var(--zifro-orange);
+	
+	--activities-color:	var(--zifro-purple);
+	--activity-color: 	var(--zifro-green);
+	--math-color: 		var(--zifro-blue);
+	--dashboard-color: 	var(--zifro-dark);
+	--admin-color: 		var(--zifro-blue);
+}
+/* EX: How to use variable color:
+ * color: var(--zifro-green); */
+
+.bg-z-dark		{ 	background-color: var(--zifro-dark);	}
+.bg-z-dark2 	{ 	background-color: var(--zifro-dark2); 	}	/* A darker tint */
+.bg-z-purple	{	background-color: var(--zifro-purple); 	}
+.bg-z-green		{ 	background-color: var(--zifro-green); 	}
+.bg-z-orange	{	background-color: var(--zifro-ogange-d);}	/* A darker tint */
+.bg-z-green		{	background-color: var(--zifro-green); 	}
+.bg-z-blue		{	background-color: var(--zifro-blue); 	}
+.bg-z-gray      {   background-color: var(--zifro-gray);    }
+
+.bg-playground 	{ 	background-color: var(--playground-color);	}
+.bg-code-guide 	{ 	background-color: var(--zifro-ogange-d);	}
+.bg-teacher 	{ 	background-color: var(--teacher-color);		}
+
+.bg-activities 	{ 	background-color: var(--activities-color); 	}
+.bg-activity 	{ 	background-color: var(--activity-color); 	}
+.bg-dashboard 	{ 	background-color: var(--dashboard-color); 	}
+.bg-admin		{ 	background-color: var(--admin-color); 		}
+
+/*  ----------------------------------------
+**					BODY
+**  ----------------------------------------
+*/
+
+header {
+	padding: 200px 0 150px 0;
+}
+.header-thin {
+	padding: 125px 0 75px 0;
+}
+.header-homepage {
+    background-image: url("/media/1062/header_background.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.header-campaign-page {
+    background-image: url("/media/1062/header_background.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+@media (min-width: 700px){
+    header.header-homepage h1 {
+        font-size: 4rem;
+    }
+    .header-homepage{
+        min-height: 500px;
+    }
+}
+@media (min-width: 1200px){
+    header.header-homepage h1 {
+        font-size: 5rem;
+    }
+    .header-homepage{
+        min-height: 700px;
+    }
+}
+@media (min-width: 700px){
+    header.header-campaign-page h1 {
+        font-size: 3.5rem;
+    }
+    .header-homepage{
+        min-height: 500px;
+    }
+}
+@media (min-width: 1200px){
+    header.header-campaign-page h1 {
+        font-size: 4.5rem;
+    }
+    .header-homepage{
+        min-height: 700px;
+    }
+}
+.header-title {
+    margin-bottom: 2rem!important;
+    font-weight: 600;
+    text-shadow: 0px 0px 15px rgba(49, 76, 83, 0.5);
+}
+.header-subtitle {
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px rgba(49, 76, 83, 0.5);
+}
+iframe {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+section {
+    min-height: 600px;
+	padding: 75px 0;
+}
+.section-title{
+    font-weight: 600;
+}
+.thin-section {
+    min-height: 150px!important; 
+	padding: 75px 0;
+}
+.no-min-height{
+    min-height: 0;
+}
+.sub-section { /* For some reason, this one is not called. */
+	margin: 2rem!important;
+}
+.breadcrumb-section {
+	padding:10px 0;
+	background-color: #fff;
+	min-height: 0;
+}
+h1, h2, h3, h4, h5 {
+	font-family: Raleway, Courier, sans-serif;
+}
+a, .btn-link{
+	color: var(--zifro-purple);
+}
+a:hover{
+	text-decoration: none;
+}
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.svg{
+	width: 100%;
+	height: auto;
+}
+pre {
+	font-family: courier;
+	background: #484d53;
+	color: #f1f1f1;
+	padding: 10px 16px;
+	border-radius: 4px;
+	-moz-box-shadow: inset 0 0 8px #2e3439;
+	box-shadow: inset 0 0 8px #2e3439;
+}
+code, tt{
+	font-family: courier;
+	font-size: 14px;
+	background: #484d53;
+	color: #f1f1f1;
+	padding: 3px 6px;
+	border-radius: 3px;
+	-moz-box-shadow: inset 0 0 4px #2e3439;
+	box-shadow: inset 0 0 4px #2e3439;
+}
+a:hover, .btn-link:hover {
+	color: rgba(129, 89, 217, 1);
+}
+.btn-primary {
+	background-color: var(--zifro-green);
+	border-color: var(--zifro-green);
+}
+.btn-primary:hover {
+	background-color: var(--zifro-green-l);
+	border-color: var(--zifro-green-l);
+}
+.btn-primary:disabled {
+    background-color: lightgrey;
+    border-color: lightgrey;
+}
+.btn-secondary {
+	background-color: rgb(120, 140, 146);
+	border-color: rgb(107, 127, 133);
+}
+.btn-secondary:hover {
+	background-color: rgb(150, 172, 179);
+	border-color: rgb(120, 140, 146);
+}
+.text-gray {
+	color: rgba(190, 190, 190, 1);
+}
+.text-gray:hover {
+	color: rgba(210, 210, 210, 1);
+}
+.text-light {
+    color: rgb(200, 200, 200);
+}
+.text-light:hover {
+    color: rgb(220, 220, 220);
+}
+.text-light-opac{
+    color: rgba(255, 255, 255, 0.6);
+}
+.text-success {
+    color: var(--zifro-green);
+}
+.alert-success {
+    color: #0e7761;
+    background-color: rgba(35, 178, 147, 0.20);
+    border-color: rgba(35, 178, 147, 0.30);
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+	color:#e6e6e6;
+}
+.collapse-card {
+	margin-top: 1rem;
+}
+.collapse-card .card-header{
+	padding: 0.5rem 1rem;
+}
+.btn-collapse {
+	color: var(--gray);
+}
+/*
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+}
+*/
+.animated-clickable:hover {
+	-webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+.animate-hover:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+.icon-wrapper {
+	height: 150px;
+	margin-bottom: 2rem;
+	align-content: center;
+}
+.icon-wrapper a {
+    vertical-align: bottom!important;
+}
+.btn-cta {
+	border-radius: 2.5rem;
+	padding: 1.25rem 3rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+.blog-preview-post{
+	background-color: #f9f9fa;
+	color: var(--zifro-dark2);
+}
+.cc-window{
+	font-family: inherit!important; 
+	font-size: inherit!important;
+}
+/* used by razors ValidationMessageFor*/
+.field-validation-error {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.validation-summary-errors {
+    color: #dc3545;
+}
+.validation-summary-errors:empty {
+    display: none;
+}
+.hide-if-empty:empty {
+    display: none;
+}
+.continuous-feedback-form ~ label{
+	color: #fff;
+	display:none;
+}
+/* registation form member type*/
+.member-type-group{
+	width: 100%;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+.member-type{
+	padding: 1rem;
+	margin-left: 0!important;
+    width: 34%;
+    width: calc(100% / 3);
+}
+.member-type label{
+	margin-bottom: 0;
+	color: #6c757d;
+}
+.member-type.active label{
+	margin-bottom: 0;
+	color: #3a3f43;
+}
+.member-type .check-icon{
+	opacity: 0;
+}
+.member-type.active .check-icon{
+	opacity: 1;
+}
+.check-icon{
+	display: inline;
+	padding-right: 0.5rem;
+	color: var(--zifro-green);
+}
+input[type=radio].with-font{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.video-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+}
+.playground-info-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

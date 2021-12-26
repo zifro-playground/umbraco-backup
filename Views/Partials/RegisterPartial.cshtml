@@ -1,0 +1,94 @@
+﻿@using Zifro.Controllers
+@using Zifro.Models
+@model RegisterViewModel
+
+@using (Html.BeginUmbracoForm<RegisterController>("Register", null, new { @class = "needs-validation", @novalidate = "novalidate", @id = "registration-form" }))
+{
+    @Html.AntiForgeryToken();
+
+<fieldset>
+
+    <!-- Member type -->
+    <div class="form-group" id="type-select">
+
+        <div class="btn-group member-type-group" data-toggle="buttons">
+            <div class="btn btn-light member-type active">
+                <div class="check-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                @Html.RadioButtonFor(model => model.MemberRole, MemberRoleType.Student, new { @class = "with-font", @id = "Student", Checked = "checked" })
+                <label for="Student">Elev</label>
+            </div>
+            <div class="btn btn-light member-type">
+                <div class="check-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                @Html.RadioButtonFor(model => model.MemberRole, MemberRoleType.Teacher, new { @class = "with-font", @id = "Teacher" })
+                <label for="Teacher">Lärare</label>
+            </div>
+            <div class="btn btn-light member-type">
+                <div class="check-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                @Html.RadioButtonFor(model => model.MemberRole, MemberRoleType.Other, new { @class = "with-font", @id = "Other" })
+                <label for="Other">Annat</label>
+            </div> 
+        </div>
+
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email, new { @class = "sr-only" })
+        @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email", @required = "required" })
+        @Html.ValidationMessageFor(model => model.Email)
+        <div class="invalid-feedback">Skriv din epost-adress.</div>
+    </div>
+
+    <!-- Firstname and Lastname -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.FirstName, new { @class = "sr-only" })
+            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @placeholder = "Förnamn", @required = "required" })
+            @Html.ValidationMessageFor(model => model.FirstName)
+            <div class="invalid-feedback">Skriv ditt förnamn.</div>
+        </div>
+        <div class="form-group col-md-6">
+            @Html.LabelFor(model => model.LastName, new { @class = "sr-only" })
+            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @placeholder = "Efternamn", @required = "required" })
+            @Html.ValidationMessageFor(model => model.LastName)
+            <div class="invalid-feedback">Skriv ditt efternamn.</div>
+        </div>
+    </div>
+
+    <!-- Password and password confirmation -->
+    <div class="form-group">
+        @Html.LabelFor(model => model.Password, new { @class = "sr-only" })
+        @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Lösenord", @required = "required" })
+        @Html.ValidationMessageFor(model => model.Password)
+        <div class="invalid-feedback">Välj ett lösenord.</div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.ConfirmPassword, new { @class = "sr-only" })
+        @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", @placeholder = "Bekräfta lösenord", @required = "required" })
+        @Html.ValidationMessageFor(model => model.ConfirmPassword)
+        <div class="invalid-feedback">Bekräfta lösenord.</div>
+    </div>
+
+    <!-- User agreements -->
+    <div class="form-row">
+    <div class="form-group col-md-4">
+        <input class="btn btn-primary btn-large btn-lg" type="submit" value="Registrera" />
+    </div>    
+    <div class="form-check col-md-8 mt-3" id="UserAgreements">
+        @Html.LabelFor(model => model.AcceptedUserAgreement, new { @class = "sr-only" })
+        @Html.CheckBoxFor(m => m.AcceptedUserAgreement, new { @class = "form-check-input", @id = "UserAgreementsCheckbox", @required = "required" })
+        <label class="form-check-label" for="UserAgreementsCheckbox">Jag accepterar <a href="/anvaendarvillkor" target="_blank">användarvillkoren</a></label>
+        @Html.ValidationMessageFor(model => model.AcceptedUserAgreement)
+        <div class="invalid-feedback">Du måste acceptera användarvillkoren.</div>
+    </div>
+    </div>
+
+
+</fieldset>
+}

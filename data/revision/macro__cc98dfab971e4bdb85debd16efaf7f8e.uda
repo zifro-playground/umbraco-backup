@@ -1,0 +1,24 @@
+{
+  "UseInEditor": false,
+  "CacheDuration": 0,
+  "CacheByPage": false,
+  "CacheByMember": false,
+  "DontRender": true,
+  "ControlType": "",
+  "ControlAssembly": "",
+  "ScriptPath": "~/Views/MacroPartials/ActivityList.cshtml",
+  "XsltPath": "",
+  "Properties": [],
+  "Udi": "umb://macro/cc98dfab971e4bdb85debd16efaf7f8e",
+  "Dependencies": [
+    {
+      "Udi": "umb://partial-view-macro/ActivityList.cshtml",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Name": "Activity List",
+  "Alias": "ActivityList",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MacroArtifact",
+  "__version": "2.0.11"
+}

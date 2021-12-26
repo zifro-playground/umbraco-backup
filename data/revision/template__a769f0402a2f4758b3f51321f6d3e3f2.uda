@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/ProductIntro.cshtml",
+  "Master": null,
+  "Udi": "umb://template/a769f0402a2f4758b3f51321f6d3e3f2",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/ProductIntro.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Product Intro",
+  "Alias": "ProductIntro",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

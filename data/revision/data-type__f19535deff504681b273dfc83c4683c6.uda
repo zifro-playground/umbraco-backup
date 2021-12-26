@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.MultipleTextstring",
+  "DatabaseType": 0,
+  "PreValues": {
+    "0": "{\"Minimum\":1,\"Maximum\":5}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f19535deff504681b273dfc83c4683c6",
+  "Dependencies": [],
+  "Name": "Activity Item - Math tags - Repeatable textstrings",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

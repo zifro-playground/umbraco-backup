@@ -1,0 +1,33 @@
+﻿@using Zifro.Controllers
+@model Zifro.Models.LoginModel
+
+@using (Html.BeginUmbracoForm<LoginController>("Login"))
+{
+    @Html.AntiForgeryToken();
+
+    if (ViewData.ModelState[""] != null && ViewData.ModelState[""].Errors.Any())
+    {
+         <div class="alert alert-danger hide-if-empty" role="alert">
+             @Html.ValidationSummary(true)
+         </div>
+     }
+
+    <fieldset>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "sr-only" })
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, new { @class = "sr-only" })
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Lösenord" })
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <p>
+            <input class="btn btn-secondary" type="submit" value="Logga in" />
+            @*<input class="btn btn-secondary" onclick="window.location.href='https://zifro.se/logga-in/skolon'" value="Logga in med skolon" />*@
+        </p>
+    </fieldset>
+}

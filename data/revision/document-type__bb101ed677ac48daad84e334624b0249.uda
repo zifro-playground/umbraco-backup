@@ -1,0 +1,141 @@
+{
+  "DefaultTemplate": "umb://template/21c18d5af9d144798acf0213b86a4634",
+  "AllowedTemplates": [
+    "umb://template/21c18d5af9d144798acf0213b86a4634"
+  ],
+  "Icon": "icon-arrow-right",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "f940052a-e9b8-4d71-a03f-10f794097833",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "2022dcbf-58f8-46ff-a1b5-f4a1102b54f3",
+          "Alias": "buttonLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button link",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "55400100-78ed-4de6-b32b-ad8818da2659",
+          "Alias": "text",
+          "DataType": "umb://data-type/b11c7ff6fdea48bfbe692dcf31c218c7",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "82f31069-9226-47b7-8e4d-a3a07e92bef8",
+          "Alias": "buttonText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button Text",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "b4ccdc6e-af61-4818-b9b8-c2a941fbf4ab",
+          "Alias": "downloadPDFLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Download PDF Link",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "d8e41ea1-cfde-4f27-8fb9-97a9616e7c31",
+          "Alias": "getOfferText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Get Offer Text",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "dad6db36-7b1d-4b91-96e9-8a119c69dd35",
+          "Alias": "downloadPDFText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Download PDF Text",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "dc897e16-e3a7-4edd-8c80-4983c30f9d93",
+          "Alias": "getOfferLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Get Offer Link",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "e0784350-aa1e-4413-95c0-e545c410b886",
+          "Alias": "sectionSubtitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Subtitle",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "ff5d1895-7f86-4e49-aedf-ceac026d8e8e",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/bb101ed677ac48daad84e334624b0249",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/b11c7ff6fdea48bfbe692dcf31c218c7",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/21c18d5af9d144798acf0213b86a4634",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Call to Action",
+  "Alias": "callToAction",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,58 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.AboutUs>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+@{
+    var storyItems = Model.Content.Children("storyItem").Where(x => x.IsVisible());
+    int itemCounter = 0;
+}
+
+<section class="bg-z-dark text-white" id="about-us-story">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title mb-4 text-center">
+                    @Model.Content.Title
+                </h2>
+
+                <ul class="timeline">
+                    @foreach (var item in storyItems)
+                    {
+                        var itemImg = item.GetPropertyValue<IPublishedContent>("storyItemImage");
+                        <li class="@(itemCounter %2 == 0 ? "" : "timeline-inverted")">
+                            <div class="timeline-image">
+                                <h4>
+                                    <strong>
+                                        @item.GetPropertyValue("TimeStamp")
+                                    </strong>
+                                </h4>
+                                <img class="rounded-circle img-fluid" src="@itemImg.Url" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="subheading"> 
+                                        @item.GetPropertyValue("Title")
+                                    </h3>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-white"> 
+                                        @item.GetPropertyValue("Text")
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        itemCounter ++;
+                    }
+                    <li>
+                        <div class="timeline-image">
+                            <h4><strong>@Umbraco.GetDictionaryValue("Now")</strong></h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/TeacherInfo.cshtml",
+  "Master": null,
+  "Udi": "umb://template/5ab2eb6da4064282b1fa323a94f61376",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/TeacherInfo.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Teacher Info",
+  "Alias": "TeacherInfo",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

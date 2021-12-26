@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/GamePage.cshtml",
+  "Master": "umb://template/1780414df60e43fcbcdef727e3b53428",
+  "Udi": "umb://template/5dea055faecc4057a8db9fe29c415001",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/1780414df60e43fcbcdef727e3b53428",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/GamePage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Game Page",
+  "Alias": "GamePage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

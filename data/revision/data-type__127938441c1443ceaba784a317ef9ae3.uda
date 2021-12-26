@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.ListView",
+  "DatabaseType": 0,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/127938441c1443ceaba784a317ef9ae3",
+  "Dependencies": [],
+  "Name": "List View - activityItem",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

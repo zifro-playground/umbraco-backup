@@ -1,0 +1,29 @@
+﻿
+
+<button class="btn btn-secondary" onclick="location.href = '@Url.Action("ExportMembers", "MemberExport", new {memberType = "Teacher"})'">Export teacher members</button>
+<button class="btn btn-secondary" onclick="location.href = '@Url.Action("ExportMembers", "MemberExport", new {memberType = "Student"})'">Export student members</button>
+<button class="btn btn-secondary" onclick="location.href = '@Url.Action("ExportMembers", "MemberExport", new {memberType = "Other"})'">Export other members</button>
+
+<!-- this code was tried inside list.html to get the button in backoffice instead but it did not download the file
+
+<script>
+    $("#clickMe").bind('click', function () {
+        console.log("Exporting")
+        $.ajax({
+            type: "GET",
+            url: 'Surface/MemberExport/ExportMembers',
+            success: function (csvContent) {
+                console.log(csvContent)
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                //some errror, some show err msg to user and log the error
+                alert(xhr.responseText);
+
+            }
+        });
+    });
+
+</script>
+<input id="clickMe" class="btn btn-secondary" style="margin-bottom: 40px" type="button" value="Export teachers" />
+
+-->

@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/ForgotPasswordPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/53e71ad4cb1d47a09ae3cd492e034c6e",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/ForgotPasswordPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Forgot Password Page",
+  "Alias": "ForgotPasswordPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

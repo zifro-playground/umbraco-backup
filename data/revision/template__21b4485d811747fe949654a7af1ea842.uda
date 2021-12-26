@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/TutorialPage.cshtml",
+  "Master": "umb://template/1780414df60e43fcbcdef727e3b53428",
+  "Udi": "umb://template/21b4485d811747fe949654a7af1ea842",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/1780414df60e43fcbcdef727e3b53428",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/TutorialPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Tutorial Page",
+  "Alias": "TutorialPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

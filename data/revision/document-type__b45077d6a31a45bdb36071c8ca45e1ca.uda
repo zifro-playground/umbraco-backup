@@ -1,0 +1,57 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-post-it color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+    "umb://document-type/4655790d1e4143898db4be8d5439cc82"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "6c64de06-019f-42d3-adca-352fa8f2f259",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "8d8fefc8-5da7-4d05-815d-8503c1a545cf",
+          "Alias": "markdown",
+          "DataType": "umb://data-type/31d931c7ce8940a1934e664be25a1e8c",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Markdown",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b45077d6a31a45bdb36071c8ca45e1ca",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/31d931c7ce8940a1934e664be25a1e8c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4655790d1e4143898db4be8d5439cc82",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Articulate Markdown",
+  "Alias": "ArticulateMarkdown",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

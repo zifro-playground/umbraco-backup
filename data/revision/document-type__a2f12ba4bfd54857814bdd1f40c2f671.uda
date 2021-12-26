@@ -1,0 +1,121 @@
+{
+  "DefaultTemplate": "umb://template/e4d7ccf517c6441fa5bc331ffe259654",
+  "AllowedTemplates": [
+    "umb://template/e4d7ccf517c6441fa5bc331ffe259654"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "796fcea4-a111-4b1b-87af-141329407c21",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "52306eca-ae66-4aaa-83b7-28bfd5463a61",
+          "Alias": "whyTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Why Title",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "84f284eb-146d-45ee-8668-65de5a41c58c",
+          "Alias": "buttonText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Button Text",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "870582ca-654e-473e-b620-74471c53e866",
+          "Alias": "offerDescription",
+          "DataType": "umb://data-type/21712251edbb4660919b065f494d9d2b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Offer Description",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "a246935d-8771-4fd6-89f4-c64c2d5543e6",
+          "Alias": "offerTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Offer Title",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "b31d43bd-a115-4c0d-8a73-9c005dfbe266",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "d4312c47-6116-4271-8312-7928220b41e0",
+          "Alias": "subtitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Subtitle",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "ed79ba23-2db1-43e6-a423-6fb017eae1a2",
+          "Alias": "introText",
+          "DataType": "umb://data-type/eb25e44fcf4a434ca9df2deb2046bdf8",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Intro Text",
+          "SortOrder": 3,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/a2f12ba4bfd54857814bdd1f40c2f671",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/21712251edbb4660919b065f494d9d2b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/eb25e44fcf4a434ca9df2deb2046bdf8",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/e4d7ccf517c6441fa5bc331ffe259654",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Campaign Page",
+  "Alias": "campaignPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TrueFalse",
+  "DatabaseType": 2,
+  "PreValues": {
+    "default": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/dac3908bd6e34647a0e12d33af9548c3",
+  "Dependencies": [],
+  "Name": "Call to Action - New Tab - TrueFalse",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,54 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.CallToAction>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = null;
+    
+}
+
+<section id="CTA" class="thin-section bg-z-purple text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title"> @Model.Content.SectionTitle</h2>
+                
+                <h5 class="section-subtitle mb-5">@Model.Content.SectionSubtitle</h5>
+                
+                <p>@Model.Content.Text</p>
+                        
+                @{
+                    var downloadPDFLink = Model.Content.GetPropertyValue<string>("downloadPDFLink");
+                    var downloadPDFText = Model.Content.GetPropertyValue<string>("downloadPDFText");
+                }
+                @if(!String.IsNullOrEmpty(downloadPDFLink) && !String.IsNullOrEmpty(downloadPDFText))
+                {
+                    <p>
+                        <a href="@downloadPDFLink" class="float-right text-gray">
+                            <i class="fa fa-arrow-down"></i> 
+                            @downloadPDFText
+                        </a>
+                    </p>
+                }
+
+                <a href="@Model.Content.ButtonLink" class="btn btn-primary btn-cta m-3 mt-5 mb-5" role="button">
+                    @Model.Content.ButtonText
+                </a>
+
+                @{
+                    var getOfferLink = Model.Content.GetPropertyValue<string>("getOfferLink");
+                    var getOfferText = Model.Content.GetPropertyValue<string>("getOfferText");
+                }
+                @if(!String.IsNullOrEmpty(getOfferLink) && !String.IsNullOrEmpty(getOfferText))
+                {
+                <p>
+                    <a href="@getOfferLink" class="text-gray">
+                        <i class="fa fa-arrow-right"></i>
+                        @getOfferText
+                    </a>
+                </p>
+                }
+                    
+            </div>
+        </div>
+    </div>
+</section>

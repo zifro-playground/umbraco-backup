@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.LoginPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Zifro.Models;
+@{
+    Layout = "Master.cshtml";
+}
+
+<!-- 
+<header class="bg-z-orange text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1> 
+                    @Model.Content.Name
+                </h1>
+            </div>
+        </div>
+    </div>
+</header> 
+-->
+
+<section style="margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+
+                <h2> 
+                    @Model.Content.Title
+                </h2>
+
+                <p> @Model.Content.Text </p>
+
+                @{ Html.RenderPartial("~/Views/Partials/LoginPartial.cshtml", new LoginModel()); }
+
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p style="margin: 1rem 0; border-top: 1px solid #b4c0c3;"></p>
+                Har du glömt lösenord? <a href="/logga-in/gloemt-loesenord/"> Välj nytt lösenord </a></br>
+                Har du inget konto än? <a href="/registrera"> Skapa konto </a></br>
+                Har du ett Skolon-konto? <a role="button" href="/logga-in/skolon/"> Logga in med Skolon </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    
+</script>

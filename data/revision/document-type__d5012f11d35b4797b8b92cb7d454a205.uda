@@ -1,0 +1,40 @@
+{
+  "DefaultTemplate": "umb://template/84481c9097704636aa53972c09932094",
+  "AllowedTemplates": [
+    "umb://template/84481c9097704636aa53972c09932094"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+  "AllowedChildContentTypes": [
+    "umb://document-type/e678a62bae204a368d6e96621da97861"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/d5012f11d35b4797b8b92cb7d454a205",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/e678a62bae204a368d6e96621da97861",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/84481c9097704636aa53972c09932094",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Skolon Login Page",
+  "Alias": "skolonLoginPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

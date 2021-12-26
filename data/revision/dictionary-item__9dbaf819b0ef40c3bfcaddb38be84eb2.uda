@@ -1,0 +1,17 @@
+{
+  "ItemKey": "ProductIntro",
+  "ParentId": "a1c2e090-729b-4d58-9914-0b628fcfca9d",
+  "Translations": [],
+  "Name": "umb://dictionary-item/9dbaf819b0ef40c3bfcaddb38be84eb2",
+  "Udi": "umb://dictionary-item/9dbaf819b0ef40c3bfcaddb38be84eb2",
+  "Dependencies": [
+    {
+      "Udi": "umb://dictionary-item/a1c2e090729b4d5899140b628fcfca9d",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

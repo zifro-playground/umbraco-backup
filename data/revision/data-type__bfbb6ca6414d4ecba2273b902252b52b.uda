@@ -1,0 +1,20 @@
+{
+  "EditorAlias": "Umbraco.ColorPickerAlias",
+  "DatabaseType": 1,
+  "PreValues": {
+    "0": "314c53",
+    "1": "9842a5",
+    "2": "23b293",
+    "3": "ff964c",
+    "4": "ffffff",
+    "5": "788c92",
+    "useLabel": "0"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/bfbb6ca6414d4ecba2273b902252b52b",
+  "Dependencies": [],
+  "Name": "Generic Page - Color Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,124 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Dashboard>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header class="bg-dashboard text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                
+                <h1>
+                    @Model.Content.Name
+                    <span class="badge badge-light">
+                        ALPHA
+                    </span>
+                </h1>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="main-results">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                
+                <div class="alert alert-secondary">
+                    @Model.Content.GetPropertyValue("dashboardIntro")
+                </div>
+                
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-5 mx-auto mt-3">
+                        <h3> Vanliga fel för klassen </h3>
+                        <p> Utifrån statistik över de vanligaste felen i klassen kommer du att kunna lägga extra fokus på vissa koncept. Vi tillhandahåller resurser för genomgångar som går igenom koncepten. </p>
+                    </div>
+                    <div class="col-md-7 mx-auto">
+                        <img src="/media/1040/graph_errors.png" width="100%"/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <h3> Översikt över klassens elever </h3>
+                        <p> Här kommer du att kunna få en översikt över alla elever i klassen och hur de ligger till för varje aktivitet. </p>
+                    </div>
+                    <div class="col-md-12 mx-auto">
+                        
+                        <table class="table table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="w-25">Förnamn</th>
+                                    <th class="w-25">Efternamn</th>
+                                    <th class="w-50">Styr bilen</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Jörgen </td>
+                                    <td> Cai </td>
+                                    <td class="align-middle">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Mimmi </td>
+                                    <td> Olofsson </td>
+                                    <td class="align-middle">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-z-green" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Luiza </td>
+                                    <td> Petrescu </td>
+                                    <td class="align-middle">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-z-orange" role="progressbar" style="width: 50%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Rejwane </td>
+                                    <td> Åberg </td>
+                                    <td class="align-middle">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Ronald </td>
+                                    <td> Ek </td>
+                                    <td class="align-middle">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-z-green" role="progressbar" style="width: 100%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-min-height bg-z-dark text-white" id="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                @Html.Partial("FeedbackBox")
+                
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/BlogPreview.cshtml",
+  "Master": null,
+  "Udi": "umb://template/a76ffee5e7d944a689f13994e35c0495",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/BlogPreview.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Blog Preview",
+  "Alias": "BlogPreview",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

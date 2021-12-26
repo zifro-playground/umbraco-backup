@@ -1,0 +1,28 @@
+{
+  "ItemKey": "CodeGuide",
+  "ParentId": "f3b0642c-6206-4da2-8027-df987c3e589e",
+  "Translations": [
+    {
+      "Key": "f480a6b3-5c20-4110-a58b-f8f8926e5446",
+      "Value": "Code guide",
+      "LanguageIsoCode": "en-US"
+    },
+    {
+      "Key": "f480a6b3-5c20-4110-a58b-f8f8926e5446",
+      "Value": "Kodguide",
+      "LanguageIsoCode": "sv-SE"
+    }
+  ],
+  "Name": "umb://dictionary-item/f480a6b35c204110a58bf8f8926e5446",
+  "Udi": "umb://dictionary-item/f480a6b35c204110a58bf8f8926e5446",
+  "Dependencies": [
+    {
+      "Udi": "umb://dictionary-item/f3b0642c62064da28027df987c3e589e",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

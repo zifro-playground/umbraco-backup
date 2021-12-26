@@ -1,0 +1,164 @@
+﻿@using umbraco.cms.businesslogic.web
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-z-dark2 fixed-top" id="mainNav">
+    <div class="container">
+
+        <!-- ZIFRO ICON -->
+        <a class="navbar-brand mr-1" href="/">
+            <img src="/media/1045/zifro_white.svg" height="25px" alt="Zifro">
+        </a>
+
+        @{
+            var rootNodes = Umbraco.TypedContentAtRoot();
+            var teacherHome = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "teacherHome");
+            var playgroundHome = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "playgroundHome");
+            var codeGuide = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "codeGuide");
+            var zifroHome = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "zifroHome");
+            var profilePage = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "profilePage");
+        }
+
+        @* "Membership.GetUser() != null" is needed to avoid exception on stage.zifro.se *@
+        @if (Umbraco.MemberIsLoggedOn() && Membership.GetUser() != null)
+        {
+            var memberService = ApplicationContext.Current.Services.MemberService;
+
+            var userName = Membership.GetUser().ToString();
+            var currentMember = memberService.GetByUsername(userName);
+            var roles = memberService.GetAllRoles(currentMember.Id);
+
+            if (Model.Content == zifroHome)
+            {
+                <!-- TEACHER/PLAYGROUND BUTTONS -->
+                <div class="ml-auto">
+                    @if (Umbraco.MemberHasAccess(teacherHome.Id, teacherHome.Path))
+                    {
+                        <a class="btn btn-secondary m-1" href="/teacher" role="button">
+                            Zifro Teacher
+                        </a>
+                    }
+                    @if (Umbraco.MemberHasAccess(playgroundHome.Id, playgroundHome.Path))
+                    {
+                        <a class="btn btn-secondary m-1" href="/playground" role="button">
+                            Zifro Playground
+                        </a>
+                    }
+                </div>
+            }
+            else
+            {
+                <!-- APP NAV BAR -->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <!-- LHS APP NAVIGATION -->
+                    @{ // if student is in Playground app (including profile page):
+                    }
+                    @if (Model.Content.IsDescendantOrSelf(playgroundHome) || (Model.Content == profilePage && roles.Contains("Student")))
+                    {
+                        <div class="navbar-nav mr-auto">
+                            <a class="nav-link" href="/playground">
+                                <!--<h4 class="mb-0" style="font-weight: 300"> PLAYGROUND </h4>-->
+                                <img src="/media/1046/zifro_playground_text.svg" height="20px" alt="PLAYGROUND">
+                            </a>
+                        </div>
+                    }
+                    //if teacher/other is in Teacher app (including profile page):
+                    else if (Model.Content.IsDescendantOrSelf(teacherHome) || (Model.Content == profilePage && (roles.Contains("Teacher") || roles.Contains("Other"))))
+                    {
+                        <div class="navbar-nav mr-auto">
+                            <a class="nav-link " href="/teacher">
+                                <!--<h4 class="mb-0 ml-0" style="font-weight: 300"> TEACHER </h4>-->
+                                <img src="/media/1047/zifro_teacher_text.svg" height="20px" alt="TEACHER">
+                            </a>
+                        </div>
+                    }
+
+                    <!-- RHS APP NAVIGATION -->
+                    @if (roles.Contains("Student"))
+                    {
+                        <ul class="navbar-nav ml-auto">
+                            <li class="@( Model.Content.IsDescendantOrSelf(playgroundHome) ? "active" : null )">
+                                <a class="nav-link" href="@playgroundHome.Url">
+                                    Aktiviteter
+                                </a>
+                            </li>
+                            <li class="@( Model.Content.IsDescendantOrSelf(codeGuide) ? "active" : null )">
+                                <a class="nav-link" href="@codeGuide.Url">
+                                    @codeGuide.Name
+                                </a>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="navbar-nav ml-auto">
+                            <li class="@( Model.Content.IsEqual(teacherHome) ? "active" : null)">
+                                <a class="nav-link" href="@teacherHome.Url"> Hem </a>
+                            </li>
+
+                            @foreach (var item in teacherHome.Children().Where(x => x.IsVisible()))
+                            {
+                                <li class="@( Model.Content.IsDescendantOrSelf(item) ? "active" : null )">
+                                    <a class="nav-link" href="@item.Url">
+                                        @item.Name
+                                    </a>
+                                </li>
+                            }
+                            <li class="@( Model.Content.IsDescendantOrSelf(codeGuide) ? "active" : null )">
+                                <a class="nav-link" href="@codeGuide.Url">
+                                    @codeGuide.Name
+                                </a>
+                            </li>
+                        </ul>
+                    }
+
+                </div>
+            }
+
+            if (ApplicationContext.DatabaseContext.Database.Fetch<int>("select count(SkolonUserId) from UmbracoMemberToSkolonUser where UmbracoMemberId = '" + currentMember.Id + "';").First() > 0)
+            {
+                <script src="https://api.skolon.com/v1/plugins/menu/button.js"></script>
+                <div class="navbar-nav ml-2">
+                    <div class="skolon-menu-button"></div>
+                </div>
+            }
+            else
+            {
+                <!-- PERSONAL MENU -->
+                <ul class="navbar-nav text-gray">
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle nav-link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="/media/1017/sara_icon.png" width="30" height="30" alt="icon">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="/profile/">
+                                Min sida
+                            </a>
+                            <a class="dropdown-item" href="@Url.Action("Logout", "Login")">
+                                Logga ut
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            }
+        }
+        else
+        {
+            if (Domain.GetDomainsById(Model.Content.AncestorOrSelf(1).Id).Length > 0 && Domain.GetDomainsById(Model.Content.AncestorOrSelf(1).Id)[0].Language.CultureAlias != "en-US")
+             {
+                 <!-- LOGIN/REGISTER BUTTONS -->
+                 <div class="float-right ml-auto">
+                     <a class="btn btn-secondary m-1" href="/logga-in" role="button">
+                         Logga in
+                     </a>
+                     <a class="btn btn-primary m-1" href="/registrera" role="button">
+                         Registrera
+                     </a>
+                 </div>
+             }
+        }
+    </div>
+</nav>

@@ -1,0 +1,200 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": ".sprTreeFolder",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "7913f209-06f9-464e-987a-c88064a9d5a7",
+      "Name": "Post Attributes",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "03ae6740-5a40-48c0-97bd-e87a028ef97b",
+          "Alias": "excerpt",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Excerpt",
+          "SortOrder": 3,
+          "Validation": ""
+        },
+        {
+          "Key": "08305faf-be01-4ce0-b8c1-ddee2bb9c756",
+          "Alias": "umbracoUrlName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "If left blank then umbraco will auto-generate the URL name based on the node name",
+          "Mandatory": false,
+          "Name": "Slug",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "09b68fb8-6cc9-4e9a-a894-b8cab7ac68e4",
+          "Alias": "categories",
+          "DataType": "umb://data-type/a72aeb125b284a47b99afde14d49c1ac",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Categories",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "3c86741e-b4be-4239-9f03-12804fb2f3e6",
+          "Alias": "tags",
+          "DataType": "umb://data-type/f8404fdc7667418495c3125b1d81314d",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Tags",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "6c37fafc-77c2-43c2-9f05-071c23cb0902",
+          "Alias": "enableComments",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Enable Comments",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "6d4c78e5-e863-43d4-a9f2-19e681e4194b",
+          "Alias": "author",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "Author",
+          "SortOrder": 4,
+          "Validation": ""
+        },
+        {
+          "Key": "c41ec4bf-d627-4c12-ab84-c55b52393009",
+          "Alias": "publishedDate",
+          "DataType": "umb://data-type/e4d66c0fb935420081f0025f7256b89a",
+          "Description": "This is the date that the document will be shown as published on your website",
+          "Mandatory": false,
+          "Name": "Published Date",
+          "SortOrder": 5,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "9e442c45-fa8b-4a0c-bf23-770178fcc827",
+      "Name": "Content",
+      "SortOrder": 1,
+      "PropertyTypes": []
+    },
+    {
+      "Key": "aeb7a1f1-bc75-4ec5-904e-6067e9fb4581",
+      "Name": "Image",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "00d73509-a79e-40ed-a5c0-4080696986ed",
+          "Alias": "postImage",
+          "DataType": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+          "Description": "An optional image for your blog post",
+          "Mandatory": false,
+          "Name": "Post Image",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "cbe21087-0e1b-453d-8a4a-5dd8dfff80e2",
+      "Name": "Meta Tags",
+      "SortOrder": 3,
+      "PropertyTypes": [
+        {
+          "Key": "4fd58c22-a875-4753-b10d-ec948f11cb58",
+          "Alias": "socialDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Open Graph Description - Describe the article in one or two lines.",
+          "Mandatory": false,
+          "Name": "Social Description",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [
+    {
+      "Key": "0762c4d6-e368-4282-87d5-b93b86a4385e",
+      "Alias": "umbracoUrlAlias",
+      "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Description": "",
+      "Mandatory": false,
+      "Name": "umbracoUrlAlias",
+      "SortOrder": 0,
+      "Validation": ""
+    },
+    {
+      "Key": "6731607a-11dc-4469-95a0-8e1f951401fd",
+      "Alias": "importId",
+      "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Description": "Used during a blogml import process to ensure that re-importing does not create duplicate posts.",
+      "Mandatory": false,
+      "Name": "Import Id",
+      "SortOrder": 1,
+      "Validation": ""
+    }
+  ],
+  "Udi": "umb://document-type/02d3597fdf214bb5a4ec9ab8bdf5a3b4",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/a72aeb125b284a47b99afde14d49c1ac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/e4d66c0fb935420081f0025f7256b89a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f8404fdc7667418495c3125b1d81314d",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Articulate Post",
+  "Alias": "ArticulatePost",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

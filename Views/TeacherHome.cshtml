@@ -1,0 +1,105 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TeacherHome>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header class="bg-teacher text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                
+                <h1 style="text-transform: uppercase"> 
+                    @Model.Content.Name
+                </h1>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="app-nav" class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <nav>
+                    <ol class="breadcrumb bg-transparent" style="margin:0px;">
+                        <li>
+                            <a href="/playground" style="color: var(--zifro-dark)">
+                                <i class="fa fa-chevron-circle-right"></i>
+                                Till PLAYGROUND
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="content" style="padding-top:25px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                
+                <div id="intro" class="row" style="padding-bottom:3rem">
+                    <div class="col-md-2">
+                        <img src="/media/1019/teacher_icon.png" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-md-10">
+                        <h3>
+                            @Model.Content.GetPropertyValue("title")
+                        </h3>
+                        <div class="alert alert-warning" role="alert">
+                            @Model.Content.GetPropertyValue("alertInfo")
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="app-intro" style="padding-bottom:3rem">
+                    <p>@Model.Content.GetPropertyValue("appIntro")</p>
+                </div>
+                
+                <div id="playground-info"style="padding-bottom:3rem">
+                    <h3>@Model.Content.GetPropertyValue("playgroundTitle")</h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="/playground" target="_blank">
+                                <img src="/media/1022/playground_icon.svg" alt="Playground icon" width="100%"
+                                     style="padding: 1.5rem;">
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.Content.GetPropertyValue("playgroundInfo")</p>
+                            <a class="btn btn-primary" href="/playground" target="_blank" role="button">@Model.Content.PlaygroundButtonText</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id="get-started" style="padding-bottom:3rem">
+                    <p>@Model.Content.GetPropertyValue("getStarted")</p>
+                </div>
+                
+                <div id="technical-info" style="padding-bottom:3rem">
+                    <p>@Model.Content.GetPropertyValue("technicalInfo")</p>
+                </div>
+                
+                <div id="feedback" style="padding-bottom:3rem">
+                    <p>@Model.Content.GetPropertyValue("feedback")</p>
+                    @Umbraco.RenderMacro("renderUmbracoForm", new {FormGuid="0029e16c-b933-4aec-8462-b24cb7889f1d", FormTheme="bootstrap3-horizontal", ExcludeScripts="0"})
+                </div>
+            
+                <div id="support" style="padding-bottom:3rem">
+                    <p>@Model.Content.GetPropertyValue("support")</p>
+                    @{
+                        var supportBtnLink = Model.Content.GetPropertyValue("supportButtonLink");
+                        var supportBtnText = Model.Content.GetPropertyValue("supportButtonText");
+                    }
+                    <a class="btn btn-primary" href="@supportBtnLink" role="button">@supportBtnText</a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</section>

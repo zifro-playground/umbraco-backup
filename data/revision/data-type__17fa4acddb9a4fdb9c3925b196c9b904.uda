@@ -1,0 +1,16 @@
+{
+  "EditorAlias": "Umbraco.Integer",
+  "DatabaseType": 2,
+  "PreValues": {
+    "max": null,
+    "min": null,
+    "step": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/17fa4acddb9a4fdb9c3925b196c9b904",
+  "Dependencies": [],
+  "Name": "Activity Item - Summary Duration - Numeric",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

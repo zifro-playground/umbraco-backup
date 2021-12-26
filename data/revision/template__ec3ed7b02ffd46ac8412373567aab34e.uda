@@ -1,0 +1,21 @@
+{
+  "File": "umb://template-file/GenericPage.cshtml",
+  "Master": "umb://template/1780414df60e43fcbcdef727e3b53428",
+  "Udi": "umb://template/ec3ed7b02ffd46ac8412373567aab34e",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/1780414df60e43fcbcdef727e3b53428",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template-file/GenericPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Generic Page",
+  "Alias": "GenericPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

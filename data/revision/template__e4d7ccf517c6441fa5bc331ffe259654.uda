@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/CampaignPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/e4d7ccf517c6441fa5bc331ffe259654",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/CampaignPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Campaign Page",
+  "Alias": "CampaignPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

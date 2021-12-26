@@ -1,0 +1,28 @@
+{
+  "DefaultTemplate": "umb://template/b2bf7eedadf54396b55335c95ad3ff3a",
+  "AllowedTemplates": [
+    "umb://template/b2bf7eedadf54396b55335c95ad3ff3a"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/5786cee0080a417f84aaf52a5a5a8940",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/b2bf7eedadf54396b55335c95ad3ff3a",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Kodkvall",
+  "Alias": "kodkvall",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

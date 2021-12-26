@@ -1,0 +1,85 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TutorialPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+<header class="bg-z-blue text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>
+                    @Model.Content.Name
+                    <span class="badge badge-time badge-time-secondary">
+                        @Model.Content.GetPropertyValue("timeDuration") min
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="breadcrumb-section" id="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                @Html.Partial("Breadcrumb")
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding-top:50px">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto" style="padding:0px;">
+                
+                @{ var slidesLink = Model.Content.GetPropertyValue("PresentationSlidesLink"); }
+                
+                @if (slidesLink != ""){
+                    <div class="video-container">
+                        <iframe src="@slidesLink/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                }
+                
+                <p>
+                    @Umbraco.Field("stepByStepText")
+                </p>
+
+                <h2>
+                    Video av genomgången
+                </h2>
+                
+                @{ var videoID = Model.Content.PresentationVideoTutorialID; }
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/@videoID?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="related-codeconcepts" class="bg-z-gray no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                @{ var codeConceptTags = Model.Content.GetPropertyValue<string[]>("codeConceptTag"); }
+
+				<h3> Kodguide </h3>
+                <p> Vill du läsa mer? Se kodguiden.  </p>
+
+                @foreach (var tag in codeConceptTags)
+                {
+                    <a class="btn badge badge-code" href="/kodguide/@tag" role="button" target="_blank">
+                        @tag
+                    </a>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

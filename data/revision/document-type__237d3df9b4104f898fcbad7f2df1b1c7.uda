@@ -1,0 +1,283 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-voice color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/7241ffb959584a41903fea77909e21df",
+    "umb://document-type/b373a9189f554519bf0efc694b7d5b25"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "9b5a6f6f-0bc1-4a8a-8f4b-c0b2f94be90e",
+      "Name": "Blog",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "02b8e061-ce8d-4534-bcb5-a7b10d6abb56",
+          "Alias": "googleAnalyticsId",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Your Google Analytics Id (i.e. UA-123456789 )",
+          "Mandatory": false,
+          "Name": "Google Analytics Id",
+          "SortOrder": 4,
+          "Validation": ""
+        },
+        {
+          "Key": "2e6a3345-6245-4cb8-adb0-ed05622cb964",
+          "Alias": "blogDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Blog Description",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "48726d5d-8419-4cd3-affa-f8af36b2a945",
+          "Alias": "disqusShortname",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Disqus Shortname",
+          "SortOrder": 3,
+          "Validation": ""
+        },
+        {
+          "Key": "56647123-e739-4388-9c4f-233f93c3ece3",
+          "Alias": "googleAnalyticsName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The site name associated with your Google Analytics (i.e. mysite.com )",
+          "Mandatory": false,
+          "Name": "Google Analytics Name",
+          "SortOrder": 5,
+          "Validation": ""
+        },
+        {
+          "Key": "5ffe902a-10ff-4c67-8d9d-dfc2fe72d157",
+          "Alias": "blogTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "Blog Title",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "bef36676-9ef5-414a-ac99-52d4e046a5b8",
+          "Alias": "customRssFeedUrl",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Optional custom rss feed URL (i.e. if you use feedburner, etc...)",
+          "Mandatory": false,
+          "Name": "Custom RSS Feed Url",
+          "SortOrder": 1,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "a98d7fc0-98d5-4629-9ca3-0039912c9d2f",
+      "Name": "Customize",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "203a5445-784c-43e6-9e83-023e7175aacf",
+          "Alias": "tagsPageName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The page title for the tags listing",
+          "Mandatory": false,
+          "Name": "Tags Page Name",
+          "SortOrder": 3,
+          "Validation": ""
+        },
+        {
+          "Key": "57c8aba3-5599-4dbb-9f39-e4198b0bb31c",
+          "Alias": "pageSize",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "PageSize",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "6fab43ee-1daa-416e-8e8d-5a67f80c697b",
+          "Alias": "redirectArchive",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "If specified this will redirect the Archive blog post container URL to this Articulate blog root",
+          "Mandatory": false,
+          "Name": "Redirect Archive",
+          "SortOrder": 7,
+          "Validation": ""
+        },
+        {
+          "Key": "83c63267-6aee-4393-8978-fb6700ced548",
+          "Alias": "searchUrlName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Search Url Name",
+          "SortOrder": 6,
+          "Validation": ""
+        },
+        {
+          "Key": "c02861d2-10e9-405c-8929-388b47b95703",
+          "Alias": "categoriesUrlName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "Categories Url Name",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "d2e7bdf5-617c-46ba-8a1e-f50a0ca74db8",
+          "Alias": "tagsUrlName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "",
+          "Mandatory": true,
+          "Name": "Tags Url Name",
+          "SortOrder": 4,
+          "Validation": ""
+        },
+        {
+          "Key": "f4c89042-e431-4658-9cff-9f5c8a6a7586",
+          "Alias": "searchPageName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The page title for the search results",
+          "Mandatory": false,
+          "Name": "Search Page Name",
+          "SortOrder": 5,
+          "Validation": ""
+        },
+        {
+          "Key": "f515b497-672e-405f-b11e-d66ff16ca3ac",
+          "Alias": "categoriesPageName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "The page title for the categories listing",
+          "Mandatory": false,
+          "Name": "Categories Page Name",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "f7cdc6de-5954-49d3-88f0-6a25d9f78a4a",
+          "Alias": "useDateFormatForUrl",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "If specified, this will generate posts' urls in the /yyyy/mm/dd/slug format, ie 2017/06/09/codegarden-rocks",
+          "Mandatory": false,
+          "Name": "Use yyyy/mm/dd format for Url",
+          "SortOrder": 8,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "b0e75b3c-a4b6-4b38-b959-0dcc80cf5ae9",
+      "Name": "Style",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "06e6ff05-974a-49f0-b7d6-22dcf6d6ed50",
+          "Alias": "blogBanner",
+          "DataType": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+          "Description": "Optional blog banner",
+          "Mandatory": false,
+          "Name": "Blog Banner",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "24d9af4e-2e70-4242-b4f0-3c51747b59f0",
+          "Alias": "theme",
+          "DataType": "umb://data-type/8b57d00e559345d3affe24203b239bd3",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Theme",
+          "SortOrder": 2,
+          "Validation": ""
+        },
+        {
+          "Key": "96926f00-307b-4e37-9986-75c5ea5cb182",
+          "Alias": "blogLogo",
+          "DataType": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+          "Description": "Optional logo",
+          "Mandatory": false,
+          "Name": "Blog Logo",
+          "SortOrder": 1,
+          "Validation": ""
+        }
+      ]
+    },
+    {
+      "Key": "e403c1a0-e239-4d40-9a8e-88df1b7f9124",
+      "Name": "MetaWeblog options",
+      "SortOrder": 3,
+      "PropertyTypes": [
+        {
+          "Key": "89d8baeb-b4f5-4328-acda-8d2fb477b841",
+          "Alias": "extractFirstImage",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "When Windows Live Writer (or compatible WebBlog API tool) is used to create blog posts, with this option enabled it will set the first image found in the blog post to the blog's image property if one is found.",
+          "Mandatory": false,
+          "Name": "Extract First Image to Property",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/237d3df9b4104f898fcbad7f2df1b1c7",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/8b57d00e559345d3affe24203b239bd3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7241ffb959584a41903fea77909e21df",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/b373a9189f554519bf0efc694b7d5b25",
+      "Ordering": false,
+      "Mode": 0
+    }
+  ],
+  "Name": "Articulate",
+  "Alias": "Articulate",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

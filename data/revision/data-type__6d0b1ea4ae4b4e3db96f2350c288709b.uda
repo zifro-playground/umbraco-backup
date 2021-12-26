@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.MultipleTextstring",
+  "DatabaseType": 0,
+  "PreValues": {
+    "0": "{\"Minimum\":1,\"Maximum\":3}"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/6d0b1ea4ae4b4e3db96f2350c288709b",
+  "Dependencies": [],
+  "Name": "Activity Item - Presentation Video Youtube ID - Repeatable textstrings",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

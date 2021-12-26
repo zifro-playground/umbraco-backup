@@ -1,0 +1,95 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.PlaygroundHome>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header class="bg-playground text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                
+                <h1 style="text-transform: uppercase;"> @Model.Content.Name </h1>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+@{
+    var rootNodes = Umbraco.TypedContentAtRoot();
+    var teacherHome = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "teacherHome");
+    string topPadding;
+}
+
+@if ( Umbraco.MemberHasAccess(teacherHome.Id, teacherHome.Path) )
+{
+<section id="app-nav" class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <nav>
+                    <ol class="breadcrumb bg-transparent" style="margin:0px;">
+                        <li>
+                            <a href="/teacher" style="color: var(--zifro-purple)">
+                                <i class="fa fa-chevron-circle-right"></i>
+                                Till TEACHER
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+    topPadding = "25px";
+} else 
+{
+    topPadding = "75px";
+}
+
+<section class="no-min-height" style="padding-top:@topPadding" id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                
+                <div id="intro" class="row pb-5">
+                    <div class="col-md-2">
+                        <img src="/media/1022/playground_icon.svg" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-md-10">
+                        <h3>
+                            @Model.Content.GetPropertyValue("Title")
+                        </h3>
+                        <p> @Model.Content.IntroText </p>
+                    </div>
+                </div>
+                    
+                @{
+                    var activities = Model.Content.Children("gamePage").Where(x => x.IsVisible());
+
+                    var memberService = UmbracoContext.Application.Services.MemberService;
+                    if (!memberService.GetAllRoles(Members.GetCurrentMemberId()).Contains("Tester"))
+                    {
+                        activities = activities
+                            .Where(x => !string.IsNullOrEmpty(x.GetPropertyValue<string>("liveVersionNumber")));
+
+                        if (!memberService.GetAllRoles(Members.GetCurrentMemberId()).Contains("Premium"))
+                        {
+                            activities = activities
+                                .Where(x => !x.GetPropertyValue<bool>("premiumOnly"));
+                        }
+                    }
+                }
+            	@foreach(var activity in activities)
+            	{
+            	    <p>
+                	    <a href="@activity.Url" class="btn btn-primary btn-lg" role="button">
+            			    @activity.Name
+            			</a>    
+            	    </p>
+            	}
+            </div>
+        </div>
+    </div>
+</section>

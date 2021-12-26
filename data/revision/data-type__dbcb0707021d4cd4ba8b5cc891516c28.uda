@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.TinyMCEv3",
+  "DatabaseType": 0,
+  "PreValues": {
+    "editor": "{\r\n  \"toolbar\": [\r\n    \"code\",\r\n    \"bold\",\r\n    \"italic\",\r\n    \"underline\",\r\n    \"strikethrough\",\r\n    \"alignleft\",\r\n    \"aligncenter\",\r\n    \"alignright\",\r\n    \"bullist\",\r\n    \"numlist\",\r\n    \"link\",\r\n    \"unlink\",\r\n    \"anchor\",\r\n    \"umbmediapicker\",\r\n    \"umbembeddialog\",\r\n    \"hr\"\r\n  ],\r\n  \"stylesheets\": [],\r\n  \"dimensions\": {\r\n    \"height\": 500\r\n  }\r\n}",
+    "hideLabel": "1"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/dbcb0707021d4cd4ba8b5cc891516c28",
+  "Dependencies": [],
+  "Name": "Articulate Rich Text",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

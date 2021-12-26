@@ -1,0 +1,384 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ActivityItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+
+    var memberService = UmbracoContext.Application.Services.MemberService;
+}
+
+<header class="bg-activity text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+
+                <h1>@Model.Content.Name</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="breadcrumb-section" id="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                @Html.Partial("Breadcrumb")
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (Model.Content.GetPropertyValue<bool>("disabled"))
+{
+    <section class="no-min-height" id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="alert alert-warning">Denna aktivitet är inaktiverad för tillfället.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+else if (Model.Content.GetPropertyValue<bool>("premiumOnly") && !memberService.GetAllRoles(Members.GetCurrentMemberId()).Contains("Premium"))
+{
+    <section class="no-min-height" id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="alert alert-warning">Du har inte tillgång till denna aktivitet. Uppgradera!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    <section class="no-min-height" id="intro" style="padding-top: 50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <div class="activity-header-section">
+                        <div class="row">
+                            <div class="col-md-3">
+                                @{
+                                    var thumbnail = Model.Content.ActivityThumbnail;
+                                    var codeTagsIntroducing = Model.Content.CodeTagsIntroducing;
+                                    var codeTagsUsing = Model.Content.CodeTagsUsing;
+                                    var mathTags = Model.Content.MathTags;
+                                }
+                                <img class="activity-img" src="@thumbnail.Url" alt="Thumbnail">
+                            </div>
+
+                            <div class="col-md-9">
+                                <p class="card-text">
+                                    @Model.Content.ActivityDescription
+                                </p>
+                                @if (codeTagsIntroducing.Any())
+                                {
+                                    <p id="introduced-concepts">
+                                        <i class="fas fa-tag text-dark small"></i>
+                                        <span class="tag-description">Introducerar: </span>
+                                        @foreach (var codeTag in codeTagsIntroducing)
+                                        {
+                                            <a class="btn badge badge-code" href="/kodguide/@codeTag" role="button" target="_blank">
+                                                @codeTag
+                                            </a>
+                                        }
+                                    </p>
+                                }
+                                @if (codeTagsUsing.Any() || mathTags.Any())
+                                {
+                                    <p id="used-concepts">
+                                        <i class="fas fa-tags text-dark small"></i>
+                                        <span class="tag-description"> Använder: </span>
+                                        @foreach (var codeTag in codeTagsUsing)
+                                        {
+                                            <a class="btn badge badge-code" href="/kodguide/@codeTag" role="button" target="_blank">
+                                                @codeTag
+                                            </a>
+                                        }
+                                        @foreach (var mathTag in mathTags)
+                                        {
+                                            <span class="badge badge-math">
+                                                @mathTag
+                                            </span>
+                                        }
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="float-right">
+                                    <span class="badge badge-time">
+                                        @Model.Content.ActivityDuration min
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="curriculum">
+                        <h3>Centralt innehåll</h3>
+                        <p> Kursplan matematik, åk 7-9 (LGR, 2018).</p>
+                        <div class="card collapse-card">
+                            <div class="card-header" id="curriculum-title">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#curriculum-info" aria-expanded="false" aria-controls="curriculum-info">
+                                        Centralt innehåll
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="collapse" id="curriculum-info" aria-labelledby="curriculum-title">
+                                <div class="card-body">
+                                    <p>@Model.Content.Curriculum</p>
+                                    <button class="btn btn-collapse" onclick="$('#curriculum-info').collapse('hide')"> Stäng </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-content" class="bg-activity text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <div class="sub-section" id="introduction" style="padding: 1.5rem 0;">
+                        <h3>
+                            Inledning
+                            <span class="badge badge-time float-right">
+                                @Model.Content.GetPropertyValue("ActivityIntroductionDuration") min
+                            </span>
+                        </h3>
+
+                        <div class="card collapse-card">
+                            <div class="card-header" id="intro-title">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#intro-info" aria-expanded="false" aria-controls="intro-info">
+                                        @Model.Content.ActivityIntroductionTitle
+                                    </button>
+                                    <span class="badge badge-time" style="opacity: 0.4;">
+                                        @Model.Content.ActivityIntroductionDuration min
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="collapse tutorial-collapse" id="intro-info" aria-labelledby="intro-title">
+                                <div class="card-body">
+                                    @Model.Content.ActivityIntroductionText
+                                    <button class="btn btn-collapse" onclick="$('#intro-info').collapse('hide')"> Stäng </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-section" id="tutorials" style="padding: 1.5rem 0;">
+                        @{
+                            var tutorialPages = Model.Content.Children("tutorialPage");
+                            int tutorialInd = 1;
+                        }
+                        <h3>
+                            Genomgångar
+                            @{ int totTutDur = tutorialPages.Sum(x => x.GetPropertyValue<int>("timeDuration")); }
+                            <span class="badge badge-time float-right">
+                                @totTutDur min
+                            </span>
+                        </h3>
+                        @foreach (var tutorialPage in tutorialPages)
+                        {
+                            var idTitle = "tutorial-title-" + tutorialInd;
+                            var idInfo = "tutorial-info-" + tutorialInd;
+
+                            <div class="card collapse-card" id="tutorial">
+                                <div class="card-header" id="@idTitle">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#@idInfo" aria-expanded="false" aria-controls="@idInfo">
+                                            @tutorialPage.Name
+                                        </button>
+                                        <span class="badge badge-time badge-time-secondary">
+                                            @tutorialPage.GetPropertyValue("timeDuration") min
+                                        </span>
+                                        <a class="btn btn-sm btn-outline-secondary float-right" href="@tutorialPage.Url" role="button" target="_blank">Öppna i ny flik</a>
+                                    </h5>
+                                </div>
+                                <div class="collapse tutorial-collapse" id="@idInfo" aria-labelledby="@idTitle">
+                                    <div class="card-body">
+                                        @{ var slidesLink = tutorialPage.GetPropertyValue("PresentationSlidesLink"); }
+                                        @if (slidesLink != "")
+                                        {
+                                            <div class="video-container">
+                                                <iframe src="@slidesLink/embed?start=false&loop=false&delayms=3000"
+                                                        frameborder="0" width="480" height="299" allowfullscreen="true"
+                                                        mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                            </div>
+                                        }
+                                        <p>
+                                            @tutorialPage.GetPropertyValue("stepByStepText")
+                                        </p>
+                                        <h4>Video av genomgången</h4>
+                                        @{ var videoID = tutorialPage.GetPropertyValue("presentationVideoTutorialID"); }
+                                        @if (videoID != "")
+                                        {
+                                            <div class="video-container">
+                                                <iframe src="https://www.youtube.com/embed/@videoID?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        }
+                                        <button class="btn btn-collapse" onclick="$('#@idInfo').collapse('hide')"> Stäng </button>
+                                    </div>
+                                </div>
+                            </div>
+                            tutorialInd++;
+                        }
+                    </div>
+
+                    <div class="sub-section" id="playground" style="padding: 1.5rem 0;">
+                        @{
+                            IPublishedContent gamePage = Model.Content.GetPropertyValue<IPublishedContent>("playgroundActivity");
+                        }
+                        <h3>
+                            ZIFRO PLAYGROUND
+                            <span class="badge badge-time float-right">
+                                @Model.Content.GetPropertyValue("playgroundDuration") min
+                            </span>
+                        </h3>
+                        <div class="row justify-content-start mt-4">
+
+                            <div class="col-md-3 d-flex align-items-center">
+                                <a href="@gamePage.Url" target="_blank">
+                                    <img src="/media/1022/playground_icon.svg" alt="Playground icon" width="90%">
+                                </a>
+                            </div>
+
+                            <div class="col-md-9">
+
+                                <p>@Model.Content.PlaygroundIntro</p>
+
+                                <div class="card collapse-card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <a href="@gamePage.Url" target="_blank">
+                                                <button class="btn btn-link" href="@gamePage.Url">
+                                                    PLAYGROUND: &nbsp @gamePage.Name
+                                                </button>
+                                                <span class="badge badge-time" style="opacity: 0.4;">
+                                                    @Model.Content.GetPropertyValue("playgroundDuration") min
+                                                </span>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--
+                            <a href="@gamePage.Url" role="button" target="_blank">
+                                <img src="/media/1021/play_icon.png" alt="Playground" width="80%">
+                            </a>
+                            -->
+                        </div>
+
+                    </div>
+
+                    <div class="sub-section" id="summary" style="padding: 1.5rem 0;">
+                        <h3>
+                            Avslutning
+                            <span class="badge badge-time float-right">
+                                @Model.Content.ActivitySummaryDuration min
+                            </span>
+                        </h3>
+                        <p></p>
+
+                        <div class="card collapse-card">
+                            <div class="card-header" id="summary-title">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#summary-info" aria-expanded="false" aria-controls="summary-info">
+                                        @Model.Content.ActivitySummaryTitle
+                                    </button>
+                                    <span class="badge badge-time" style="opacity: 0.4;">
+                                        @Model.Content.ActivitySummaryDuration min
+                                    </span>
+                                </h5>
+                            </div>
+                            <div class="collapse tutorial-collapse" id="summary-info" aria-labelledby="summary-title">
+                                <div class="card-body">
+                                    <p>@Model.Content.ActivitySummaryText</p>
+                                    <button class="btn btn-collapse" onclick="$('#summary-info').collapse('hide')"> Stäng </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-min-height" id="extra">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <div class="sub-section" id="tipsntricks" style="padding: 1.5rem 0;">
+                        <h3>Tips & Trixs</h3>
+
+                        @{ var activityTipsNTricks = Model.Content.GetPropertyValue("ActivityTipsAndTricks"); }
+                        @if (activityTipsNTricks != "  ")
+                        {
+                            <div class="card collapse-card">
+                                <div class="card-header" id="tipsntricks-title">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#tipsntricks-info" aria-expanded="false" aria-controls="tipsntricks-info">
+                                            Tips
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="tipsntricks-info" aria-labelledby="tipsntricks-title">
+                                    <div class="card-body">
+                                        <p> @activityTipsNTricks </p>
+                                        <button class="btn btn-collapse" onclick="$('#tipsntricks-info').collapse('hide')"> Stäng </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                        @{ var commonMistakes = Model.Content.GetPropertyValue("ActivityCommonMistakes"); }
+                        @if (commonMistakes != "")
+                        {
+                            <div class="card collapse-card">
+                                <div class="card-header" id="mistakes-title">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#mistakes-info" aria-expanded="false" aria-controls="mistakes-info">
+                                            Vanliga fel
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="collapse" id="mistakes-info" aria-labelledby="mistakes-title">
+                                    <div class="card-body">
+                                        <p>@Model.Content.ActivityCommonMistakes</p>
+                                        <button class="btn btn-collapse" onclick="$('#mistakes-info').collapse('hide')"> Stäng </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+}
+<section class="no-min-height bg-z-dark text-white" id="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                @Html.Partial("FeedbackBox")
+
+            </div>
+        </div>
+    </div>
+</section>

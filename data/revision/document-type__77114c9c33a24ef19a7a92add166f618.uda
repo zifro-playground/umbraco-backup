@@ -1,0 +1,126 @@
+{
+  "DefaultTemplate": "umb://template/a769f0402a2f4758b3f51321f6d3e3f2",
+  "AllowedTemplates": [
+    "umb://template/a769f0402a2f4758b3f51321f6d3e3f2"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "6a580c37-4580-41d5-81cf-639b034d9c1a",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "29b2e229-1969-4327-8fbc-29853e32f1b5",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "6f78b030-3c89-4df2-8db5-b2cff769d525",
+          "Alias": "teacherText",
+          "DataType": "umb://data-type/3409dc5b50ad47ddbd10c88ced191771",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Teacher Text",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "7c847248-9df0-4a93-8fae-6c05d7d1e5a9",
+          "Alias": "playgroundImage",
+          "DataType": "umb://data-type/09739fb1f48249f09c57d09d36b2b628",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Image",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "a0515062-3cbb-4db7-9941-1993d6188b89",
+          "Alias": "playgroundText",
+          "DataType": "umb://data-type/6217c737414e4e3485fdd26d6ae21c03",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Text",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "c014549f-2af4-4349-896a-506e7e7302e7",
+          "Alias": "sectionSubtitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Subtitle",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e5b1ee34-719c-433c-be3a-1bea5f36612f",
+          "Alias": "teacherImage",
+          "DataType": "umb://data-type/4068f666a0254ab7827e2ec062ae0e3b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Teacher Image",
+          "SortOrder": 5,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/77114c9c33a24ef19a7a92add166f618",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/09739fb1f48249f09c57d09d36b2b628",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/3409dc5b50ad47ddbd10c88ced191771",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/4068f666a0254ab7827e2ec062ae0e3b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/6217c737414e4e3485fdd26d6ae21c03",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/a769f0402a2f4758b3f51321f6d3e3f2",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Product Intro",
+  "Alias": "productIntro",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

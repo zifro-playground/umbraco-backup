@@ -1,0 +1,8 @@
+{
+  "Udi": "umb://member-group/ab23a8c801cb4f96a2259dc1bf38f93a",
+  "Dependencies": [],
+  "Name": "__umbracoRole_beta@zifro.se",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MemberGroupArtifact",
+  "__version": "2.0.15"
+}

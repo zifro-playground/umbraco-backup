@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/AboutUs.cshtml",
+  "Master": null,
+  "Udi": "umb://template/1bd5da3ec5d84e5fa78239e2b3dacabd",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/AboutUs.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "About us",
+  "Alias": "AboutUs",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.11"
+}

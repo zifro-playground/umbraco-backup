@@ -1,0 +1,73 @@
+{
+  "DefaultTemplate": "umb://template/4740d3d6ea314cb78d90090cb9efaed5",
+  "AllowedTemplates": [
+    "umb://template/4740d3d6ea314cb78d90090cb9efaed5"
+  ],
+  "Icon": "icon-quote",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type/7734bd29972e4017ae9e691bfe03d010",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/7734bd29972e4017ae9e691bfe03d010"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "3a420cb4-c4ce-4cc0-8cf2-8b2c63aa4c1f",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "6b7e6ce7-62a3-49f8-821d-be34d7fa9d69",
+          "Alias": "reference",
+          "DataType": "umb://data-type/5e1237322d1d4858a86cb1100139ecaf",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Reference",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "d5462d13-bf9f-4c99-bea3-3ef2e272aaab",
+          "Alias": "quote",
+          "DataType": "umb://data-type/c4a8c99e89f94db2b2d8ef086cdb952d",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Quote",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/f4553d82adb649708634135f421f5ef0",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/5e1237322d1d4858a86cb1100139ecaf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c4a8c99e89f94db2b2d8ef086cdb952d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7734bd29972e4017ae9e691bfe03d010",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/4740d3d6ea314cb78d90090cb9efaed5",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Quote item",
+  "Alias": "quoteItem",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

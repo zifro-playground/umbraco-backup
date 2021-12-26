@@ -1,0 +1,51 @@
+{
+  "DefaultTemplate": "umb://template/27d2d80a8c054ca7aacd1d337fad8fb8",
+  "AllowedTemplates": [
+    "umb://template/27d2d80a8c054ca7aacd1d337fad8fb8"
+  ],
+  "Icon": "icon-lab",
+  "Thumbnail": "folder.png",
+  "Description": "A page testing different components",
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "946b070a-b67b-42f4-ad72-b9a2edfe67e6",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "90ccbea2-ec7e-4cdf-8690-e89c8c9f15ec",
+          "Alias": "umbracoNaviHide",
+          "DataType": "umb://data-type/b00e0aa2d02c4e00a87c49b5671201da",
+          "Description": "Check this if you don't want the page to display in menus and lists. (checked box yields that .IsVisible => false)",
+          "Mandatory": false,
+          "Name": "Hide",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/55739cef984f4e11811fd7424110266f",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/b00e0aa2d02c4e00a87c49b5671201da",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/27d2d80a8c054ca7aacd1d337fad8fb8",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Test Page",
+  "Alias": "testPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

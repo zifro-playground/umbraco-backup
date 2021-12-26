@@ -1,0 +1,241 @@
+{
+  "DefaultTemplate": "umb://template/801f46d2ff5d49d5849526de11f4bdfa",
+  "AllowedTemplates": [
+    "umb://template/801f46d2ff5d49d5849526de11f4bdfa"
+  ],
+  "Icon": "icon-home color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+  "AllowedChildContentTypes": [
+    "umb://document-type/22c93ccc58a845718f8241f69c12d641",
+    "umb://document-type/55739cef984f4e11811fd7424110266f",
+    "umb://document-type/5ceaa1b5987e4fc7b4cce56d83259fa4",
+    "umb://document-type/7664cc973a9646eebc637e0e4e9fe85e"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "223d7d3e-a374-47df-bc24-4a15cbf5e7ed",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "09ae4639-42df-4c14-a0c7-66d7a4247112",
+          "Alias": "supportButtonLink",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Support Button Link",
+          "SortOrder": 15,
+          "Validation": null
+        },
+        {
+          "Key": "157e5d9b-75ed-412f-a457-6c4113c48b8e",
+          "Alias": "support",
+          "DataType": "umb://data-type/df87d301cf59408e862a833b230cd3b2",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Support",
+          "SortOrder": 13,
+          "Validation": null
+        },
+        {
+          "Key": "17b24183-00e6-40fb-9430-c6c04b3e5af7",
+          "Alias": "technicalInfo",
+          "DataType": "umb://data-type/dfe8f046e8a64db1b95e13c9c51e12e2",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Technical Info",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "6464e9e1-6bd7-4fb3-9785-d96199932c3f",
+          "Alias": "playgroundTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Title",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "6dfdc4e9-246c-4705-b7d3-57a344633db0",
+          "Alias": "getStarted",
+          "DataType": "umb://data-type/d82895f95e0b438c9752e0b77c89ee2a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Get Started",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "7ba8098d-0fad-43d0-8df7-5985087bcd37",
+          "Alias": "appIntro",
+          "DataType": "umb://data-type/0326041df0034a6b950ea3835de11f80",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "App Intro",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "84db61fd-f56b-443e-8940-5a7219a5ea8d",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "a3544ce0-a385-4d5c-be7c-a45bce5ffdce",
+          "Alias": "alertInfo",
+          "DataType": "umb://data-type/d81800fa2a384a898e6422e5009ffac1",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Alert Info",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e7f6d363-1c3b-4cfb-9702-bfcf9466e3eb",
+          "Alias": "supportButtonText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Support Button Text",
+          "SortOrder": 14,
+          "Validation": null
+        },
+        {
+          "Key": "e963a54d-79ff-47b5-8c01-1d565ec6e17c",
+          "Alias": "feedback",
+          "DataType": "umb://data-type/8d87ea78fd954678a74c978654a31c7b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Feedback",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "eb55d288-924c-4e41-8507-c2ec1c434133",
+          "Alias": "playgroundInfo",
+          "DataType": "umb://data-type/7f874a8c2ed54756ad10b4f59746135a",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Info",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "efb9bb41-5fac-4b72-a64a-afbc90f1c5c9",
+          "Alias": "playgroundButtonText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Button Text",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "f3fb1e7a-1b1d-46c3-93ad-b3e964322866",
+          "Alias": "feedbackBox",
+          "DataType": "umb://data-type/2e75419e2f11401185fcf3c550d01af6",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Feedback Box",
+          "SortOrder": 9,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b333001d00d34b21808f9a40b4f3f901",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0326041df0034a6b950ea3835de11f80",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/2e75419e2f11401185fcf3c550d01af6",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7f874a8c2ed54756ad10b4f59746135a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/8d87ea78fd954678a74c978654a31c7b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/d81800fa2a384a898e6422e5009ffac1",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/d82895f95e0b438c9752e0b77c89ee2a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/df87d301cf59408e862a833b230cd3b2",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/dfe8f046e8a64db1b95e13c9c51e12e2",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/22c93ccc58a845718f8241f69c12d641",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/55739cef984f4e11811fd7424110266f",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5ceaa1b5987e4fc7b4cce56d83259fa4",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7664cc973a9646eebc637e0e4e9fe85e",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/801f46d2ff5d49d5849526de11f4bdfa",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Teacher Home",
+  "Alias": "teacherHome",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

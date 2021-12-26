@@ -1,0 +1,92 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+    var activities = Model.Content.Children("activityItem").Where(x => x.IsVisible());
+
+    var memberService = UmbracoContext.Application.Services.MemberService;
+}
+
+@foreach (var activity in activities)
+{
+    if (activity.GetPropertyValue<bool>("disabled") ||
+        activity.GetPropertyValue<bool>("premiumOnly") && !memberService.GetAllRoles(Members.GetCurrentMemberId()).Contains("Premium"))
+    {
+        @:<div class='card mb-3 activity-card activity-disabled'>
+    }
+    else
+    {
+        @:<div class='card mb-3 activity-card'>
+    }
+
+        <a href="@activity.Url" style="text-decoration: none;">
+            <div class="card-header activity-card-header">
+                <h4>
+                    @activity.Name
+                    <span class="badge badge-time float-right">
+                        @activity.GetPropertyValue("activityDuration") min
+                    </span>
+                </h4>
+            </div>
+        </a>
+
+        <div class="card-body activity-card-body">
+            @{
+                var thumbnail = activity.GetPropertyValue<IPublishedContent>("activityThumbnail");
+            }
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="@activity.Url">
+                        <img class="activity-img" align="middle" src="@thumbnail.Url" alt="Thumbnail">
+                    </a>
+                </div>
+                <div class="col-lg-8">
+                    <p class="card-text">
+                        @activity.GetPropertyValue("activityDescription")
+                    </p>
+                    @{
+                        var codeTagsIntroducing = activity.GetPropertyValue<string[]>("codeTagsIntroducing");
+                        var codeTagsUsing = activity.GetPropertyValue<string[]>("codeTagsUsing");
+                        var mathTags = activity.GetPropertyValue<string[]>("mathTags");
+                    }
+                    @if (codeTagsIntroducing.Any())
+                    {
+                        <p class="tag-section">
+                            <i class="fas fa-tag text-dark small"></i> 
+                            <span class="tag-description"> Introducerar: </span>
+                            @foreach (var codeTag in codeTagsIntroducing)
+                            {
+                                <a class="btn badge badge-code" href="/kodguide/@codeTag" role="button" target="_blank">
+                                    @codeTag
+                                </a>
+                            }
+                        </p>
+                    }
+                    @if (codeTagsUsing.Any() || mathTags.Any())
+                    {
+                        <p class="tag-section">
+                            <i class="fas fa-tags text-dark small"></i>
+                            <span class="tag-description"> Använder: </span>
+                            @foreach (var codeTag in codeTagsUsing)
+                            {
+                                <a class="btn badge badge-code" href="/kodguide/@codeTag" role="button" target="_blank">
+                                    @codeTag
+                                </a>
+                            }
+                            @foreach (var mathTag in mathTags)
+                            {
+                                <span class="badge badge-math">
+                                    @mathTag
+                                </span>
+                            }
+                        </p>
+                    }
+                </div>
+            </div>
+
+        </div>
+    @:</div>
+}
+
+
+
+

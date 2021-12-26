@@ -1,0 +1,73 @@
+{
+  "DefaultTemplate": "umb://template/a2b0705503d54b5dbdd691d1f3b55c22",
+  "AllowedTemplates": [
+    "umb://template/a2b0705503d54b5dbdd691d1f3b55c22"
+  ],
+  "Icon": "icon-books color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/014a2582acc24930b450e4dc1678fdd8"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "b9a2966e-d871-497c-bf7f-c00c02785ad6",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "6f4edaae-f57b-4c82-a070-8d088803b4b1",
+          "Alias": "introText",
+          "DataType": "umb://data-type/d5c59e94536a44ad812ec042277833a9",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Intro Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e2e65c4c-a242-4253-932c-f03a195612c3",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/22c93ccc58a845718f8241f69c12d641",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/d5c59e94536a44ad812ec042277833a9",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/014a2582acc24930b450e4dc1678fdd8",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/a2b0705503d54b5dbdd691d1f3b55c22",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Code Guide",
+  "Alias": "codeGuide",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

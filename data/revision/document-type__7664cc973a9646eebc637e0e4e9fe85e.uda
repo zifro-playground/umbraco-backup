@@ -1,0 +1,63 @@
+{
+  "DefaultTemplate": "umb://template/374bb22874bb44758ccb8538a8208d04",
+  "AllowedTemplates": [
+    "umb://template/374bb22874bb44758ccb8538a8208d04"
+  ],
+  "Icon": "icon-dashboard color-blue",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/4655790d1e4143898db4be8d5439cc82"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "079ebd53-8b77-4f97-81e2-5cab1bf65989",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "5c8e0893-39c1-47d6-b838-df8ee5e61822",
+          "Alias": "dashboardIntro",
+          "DataType": "umb://data-type/d1780799ffe042d993b75616b51517be",
+          "Description": "Intro text for dashboard",
+          "Mandatory": false,
+          "Name": "Dashboard Intro",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/7664cc973a9646eebc637e0e4e9fe85e",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/d1780799ffe042d993b75616b51517be",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4655790d1e4143898db4be8d5439cc82",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/374bb22874bb44758ccb8538a8208d04",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Dashboard",
+  "Alias": "dashboard",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

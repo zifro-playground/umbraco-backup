@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Team>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section class="thin-section" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title"> @Model.Content.SectionTitle </h2>
+                
+                <div class="row mt-5 mb-5">
+                    <div class="col-lg-2 mx-auto text-center">
+                        <img src=" /media/1067/sara_bw.jpg" alt="Sara" class="center" height="120px">
+                    </div>
+                    <div class="col-lg-2 mx-auto text-center">
+                        <img src=" /media/1068/jonathan_bw.jpg" alt="Jonathan" class="center" height="120px">
+                    </div>
+                    
+                    <div class="col-lg-8 mx-auto p-3">
+                        @Model.Content.TextRight
+                    </div>
+                </div>
+
+                <p>@Model.Content.TextBottom</p>
+                
+            </div>
+        </div>    
+    </div>
+</section>

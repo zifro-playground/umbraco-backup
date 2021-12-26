@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "UmbracoForms.FormPicker",
+  "DatabaseType": 1,
+  "PreValues": {
+    "allowedForms": "[]"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/2e75419e2f11401185fcf3c550d01af6",
+  "Dependencies": [],
+  "Name": "Teacher Home - Feedback Box - Form Picker (1)",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

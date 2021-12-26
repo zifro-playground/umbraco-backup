@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/GenericSection.cshtml",
+  "Master": null,
+  "Udi": "umb://template/6d9704a61afd4d9d9188915bd11eca13",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/GenericSection.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Generic Section",
+  "Alias": "GenericSection",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

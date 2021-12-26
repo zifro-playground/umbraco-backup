@@ -1,0 +1,50 @@
+/*  ----------------------------------------
+**					TAGS
+**  ----------------------------------------
+*/
+.tag-description{
+    padding: 0 0.5rem;
+}
+.badge-code {
+    font-family: Raleway, Courier, sans-serif;
+    font-size: 1rem;
+	color: #fff;
+    background-color: var(--code-guide-color);
+    margin: 0.2rem 0.1rem;
+}
+
+.badge-code:hover {
+    color: #fff;
+	opacity: 0.9;
+}
+.badge-math {
+    font-family: Raleway, Courier, sans-serif;
+    font-size: 1rem;
+	color: var(--zifro-dark);
+	background-color: var(--zifro-gray);
+}
+.code-concept-summary {
+	text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+	background-color: var(--zifro-gray);
+	border-width: 0px;
+}
+.code-concept-grid {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat( auto-fit, minmax( 250px, auto ));
+}
+.code-concept-card {
+	background-color: var(--zifro-dark);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	padding: 2rem 2rem 1.5rem 2rem;
+}
+.code-concept-card:hover {
+	opacity: 0.9;
+	transition: background-color .3s;
+}
+.code-concept-body {
+	color: #fff!important;
+}

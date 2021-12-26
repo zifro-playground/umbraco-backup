@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/Quotes.cshtml",
+  "Master": null,
+  "Udi": "umb://template/442ef8ea077b44a598967d03493aec75",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Quotes.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Quotes",
+  "Alias": "Quotes",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "ArticulateThemePicker",
+  "DatabaseType": 1,
+  "PreValues": {},
+  "Parent": null,
+  "Udi": "umb://data-type/8b57d00e559345d3affe24203b239bd3",
+  "Dependencies": [],
+  "Name": "Articulate Theme Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/SellingPoints.cshtml",
+  "Master": null,
+  "Udi": "umb://template/9ecd1cbfbeb149099fcf944bef085cdf",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/SellingPoints.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Selling points",
+  "Alias": "SellingPoints",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

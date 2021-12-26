@@ -1,0 +1,17 @@
+{
+  "EditorAlias": "Umbraco.MediaPicker2",
+  "DatabaseType": 0,
+  "PreValues": {
+    "disableFolderSelect": null,
+    "multiPicker": null,
+    "onlyImages": null,
+    "startNodeId": ""
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/e395553ffaf648bd8fcd150075cf4d1d",
+  "Dependencies": [],
+  "Name": "Dashboard - Error Graph - Media Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

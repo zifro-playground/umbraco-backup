@@ -1,0 +1,86 @@
+{
+  "DefaultTemplate": "umb://template/17d24f9edd5d4deb86ed17ec06fb1c8b",
+  "AllowedTemplates": [
+    "umb://template/17d24f9edd5d4deb86ed17ec06fb1c8b"
+  ],
+  "Icon": "icon-handshake",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "5f222e6a-ff2b-431f-b914-1c60fa58de06",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "0a5d4b31-204f-4bb3-b919-d7f48fee8734",
+          "Alias": "introText",
+          "DataType": "umb://data-type/e0b947b10f5e4e3197bf71cf9a9df573",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Intro Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "54128543-0f86-4498-a7bb-62a0cb2a4019",
+          "Alias": "text",
+          "DataType": "umb://data-type/39caed0f4e204baa9764806f281ef57b",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "a7134abe-46ce-48d9-9613-f177a75d7ccf",
+          "Alias": "title",
+          "DataType": "umb://data-type/c582abde3c1b463290a4b5fe34860c18",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/e1bb229ef8af46adaa604be5f198c851",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/39caed0f4e204baa9764806f281ef57b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c582abde3c1b463290a4b5fe34860c18",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/e0b947b10f5e4e3197bf71cf9a9df573",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/17d24f9edd5d4deb86ed17ec06fb1c8b",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Registration Page",
+  "Alias": "registrationPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,94 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-search",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/11b8182f18d840bd835afc0362f70162",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "a75ab155-935c-472f-85f2-d3d52e4aad9b",
+      "Name": "Meta Data",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "493b402d-ee8b-4170-a5fa-9d0ac9d18836",
+          "Alias": "description",
+          "DataType": "umb://data-type/0f51eef0bb2541499a22f9d648d999ca",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Description",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "59fd5b88-1509-4ab5-94eb-83c12e773720",
+          "Alias": "previewImage",
+          "DataType": "umb://data-type/c962225ef5094891a2078833126e4620",
+          "Description": "This image is previewed when you share on Facebook, for instance.",
+          "Mandatory": false,
+          "Name": "Preview Image",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "77904057-c315-4b6e-9811-847b463834fa",
+          "Alias": "keywords",
+          "DataType": "umb://data-type/addae007e04546dc8f57770195468fc6",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Keywords",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "b93e52c4-0304-4e14-ba7a-7510a090fef8",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/4655790d1e4143898db4be8d5439cc82",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0f51eef0bb2541499a22f9d648d999ca",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/addae007e04546dc8f57770195468fc6",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c962225ef5094891a2078833126e4620",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/11b8182f18d840bd835afc0362f70162",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Meta Data",
+  "Alias": "metaDataSEO",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

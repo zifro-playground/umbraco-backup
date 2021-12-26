@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/UpgradePage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/06766a0faa154d198a00ddc09e46825d",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/UpgradePage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Upgrade Page",
+  "Alias": "UpgradePage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

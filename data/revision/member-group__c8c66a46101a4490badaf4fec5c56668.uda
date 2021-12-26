@@ -1,0 +1,8 @@
+{
+  "Udi": "umb://member-group/c8c66a46101a4490badaf4fec5c56668",
+  "Dependencies": [],
+  "Name": "Teacher",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MemberGroupArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,28 @@
+{
+  "ItemKey": "ReadMore",
+  "ParentId": "9dbaf819-b0ef-40c3-bfca-ddb38be84eb2",
+  "Translations": [
+    {
+      "Key": "6c572a51-7341-4528-a3fc-1b25ffc12a23",
+      "Value": "Read more",
+      "LanguageIsoCode": "en-US"
+    },
+    {
+      "Key": "6c572a51-7341-4528-a3fc-1b25ffc12a23",
+      "Value": "Läs mer",
+      "LanguageIsoCode": "sv-SE"
+    }
+  ],
+  "Name": "umb://dictionary-item/6c572a5173414528a3fc1b25ffc12a23",
+  "Udi": "umb://dictionary-item/6c572a5173414528a3fc1b25ffc12a23",
+  "Dependencies": [
+    {
+      "Udi": "umb://dictionary-item/9dbaf819b0ef40c3bfcaddb38be84eb2",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DictionaryItemArtifact",
+  "__version": "2.0.14"
+}

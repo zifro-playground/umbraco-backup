@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TrueFalse",
+  "DatabaseType": 2,
+  "PreValues": {
+    "default": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/6fbfe5ad41f34eefa04c16b1b1c03dfa",
+  "Dependencies": [],
+  "Name": "Settings - Hide - TrueFalse",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

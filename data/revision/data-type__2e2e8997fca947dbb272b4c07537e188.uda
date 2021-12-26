@@ -1,0 +1,16 @@
+{
+  "EditorAlias": "Umbraco.Integer",
+  "DatabaseType": 2,
+  "PreValues": {
+    "max": null,
+    "min": null,
+    "step": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/2e2e8997fca947dbb272b4c07537e188",
+  "Dependencies": [],
+  "Name": "Teacher - Phone - Numeric",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

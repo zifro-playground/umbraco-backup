@@ -1,0 +1,84 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.PlaygroundInfo>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section id="playground" style="padding-bottom: 25px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title" style="color: var(--playground-color)">
+                    @Model.Content.SectionTitle
+                </h2>
+                
+                <h6 class="section-subtitle">
+                    @Model.Content.SectionSubtitle
+                </h6>
+                
+                <div class="video-container">
+                    <video muted loop id="playground-demo" class="playground-info-video" allow="autoplay">
+                        <source src="~/media/1061/zifro-playground_high.mp4" type="video/mp4" />
+                        Din webbläsare kan ej visa denna video.
+                    </video>
+                </div>
+                <!-- div below will only be displayed if there is a error when playing video -->
+                <div id="video-backup" style="display: none">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="/media/1054/playground_ide.svg" alt="programmering i playground">
+                            </div>
+                            <div class="col-md-7 d-flex align-items-center">
+                                <ul>
+                                    <li><p>Eleverna kodar i programmeringsspråket Python</p></li>
+                                    <li><p>Tydligt hur koden körs m.h.a. "the notional machine"</p></li>
+                                    <li><p>Fel i koden ger snälla & konstruktiva felmeddelanden</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                        <div class="row">
+                            <div class="col-md-9 d-flex align-items-center">
+                                <ul>
+                                    <li><p>Problemen som ska lösas visualiseras med hjälp av 3D-grafik</p></li>
+                                    <li><p>Matematik och programmering varvas i problemlösningen</p></li>
+                                    <li><p>Problemen utgår ifrån temat "en hållbar framtid"</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="/media/1016/forspelet_ikon.png" alt="aktivitet i playground" class="rounded float-right" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                <script>
+                    $.fn.isHalfInViewport = function() {
+                        var elementTop = $(this).offset().top;
+                        var elementCenter = elementTop + $(this).outerHeight()/2;
+
+                        var viewportTop = $(window).scrollTop();
+                        var viewportBottom = viewportTop + $(window).height();
+
+                        return elementCenter >= viewportTop && elementCenter <= viewportBottom;
+                    };
+
+                    $(window).on('resize scroll', function () {
+                        $('#playground-demo').each(function() {
+                            if ($(this).isHalfInViewport()) {
+                                $(this)[0].play();
+                            } else {
+                                $(this)[0].pause();
+                            }
+                        });
+                    });
+
+                    $('video source').last().on('error', function() {
+                        $('#video-backup').show();
+                        $('.video-container').hide();
+                    });
+                </script>
+            </div>
+        </div>    
+    </div>
+</section>

@@ -1,0 +1,33 @@
+{
+  "DefaultTemplate": "umb://template/863f7e03b6fe4410ba7207cbe9736a6e",
+  "AllowedTemplates": [
+    "umb://template/863f7e03b6fe4410ba7207cbe9736a6e"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/e678a62bae204a368d6e96621da97861",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/863f7e03b6fe4410ba7207cbe9736a6e",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Skolon Auth Page",
+  "Alias": "skolonAuthPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

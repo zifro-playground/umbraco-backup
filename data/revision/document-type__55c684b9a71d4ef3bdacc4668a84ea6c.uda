@@ -1,0 +1,126 @@
+{
+  "DefaultTemplate": "umb://template/ec3ed7b02ffd46ac8412373567aab34e",
+  "AllowedTemplates": [
+    "umb://template/ec3ed7b02ffd46ac8412373567aab34e"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": "A page with a title and text. Nothing complicated!",
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [
+    "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+    "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "05496739-0238-4da2-a8cf-85d305482782",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "0eb7f114-9b82-40e3-ae9a-0fb1a57a3aa2",
+          "Alias": "umbracoNaviHide",
+          "DataType": "umb://data-type/4c9d11dc8e41423a82467285ae076371",
+          "Description": "Check this if you don't want the page to display in menus and lists. (checked box yields that .IsVisible => false)",
+          "Mandatory": false,
+          "Name": "Hide In Navigation",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "203fab86-db61-4c6c-a3b5-d545f7ac5f91",
+          "Alias": "headerColor",
+          "DataType": "umb://data-type/bfbb6ca6414d4ecba2273b902252b52b",
+          "Description": "This sets the background color of the header.",
+          "Mandatory": true,
+          "Name": "Header Color",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "30f517bc-b55d-425c-8216-c35c6c3a233f",
+          "Alias": "pageText",
+          "DataType": "umb://data-type/5d143f328d184caf84f5fa48da1159cd",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Page Text",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "dd502b34-e7b2-458c-b147-7183b1f823b2",
+          "Alias": "pageTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Page Title",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "6801759c-68db-4378-bdee-d7ea24e2d728",
+      "Name": "Settings",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "c834ca67-3b9f-414b-a309-91c480191992",
+          "Alias": "umbracoUrlName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Create a custom url that overrides the default url.",
+          "Mandatory": false,
+          "Name": "Custom URL",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/4c9d11dc8e41423a82467285ae076371",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/5d143f328d184caf84f5fa48da1159cd",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/bfbb6ca6414d4ecba2273b902252b52b",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/ec3ed7b02ffd46ac8412373567aab34e",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Generic Page",
+  "Alias": "genericPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.15"
+}

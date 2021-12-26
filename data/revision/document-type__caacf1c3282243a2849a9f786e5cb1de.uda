@@ -1,0 +1,156 @@
+{
+  "DefaultTemplate": "umb://template/9ecd1cbfbeb149099fcf944bef085cdf",
+  "AllowedTemplates": [
+    "umb://template/9ecd1cbfbeb149099fcf944bef085cdf"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "08644e35-f086-414d-80d6-28ed1090066e",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "05e2bc35-0bbe-4438-aa1b-86aae632eb9b",
+          "Alias": "longerText4",
+          "DataType": "umb://data-type/43910b76b1b943e298a9c04e9f2db313",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Longer text 4",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "28c8ef09-da9f-4d3a-8a6c-f812f33bc1a4",
+          "Alias": "shortText3",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Short text 3",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "55ad4980-460d-45be-9d56-f2aaf0956eaf",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "6c2c2c21-3b68-4651-9cce-adf985b48e75",
+          "Alias": "shortText1",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Short text 1",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "767a5f40-063d-45a0-b2ea-989a833b2307",
+          "Alias": "shortText2",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Short text 2",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "7b2dcd1d-dc84-4bba-9b78-00919bb84cd9",
+          "Alias": "longerText3",
+          "DataType": "umb://data-type/9a906561564c4fe68e4316368d0275b1",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Longer text 3",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "9d33a6ab-6278-4d64-ac60-2e22f6bd4645",
+          "Alias": "longerText2",
+          "DataType": "umb://data-type/0a24e61ad33242e59abb9669b3b31d39",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Longer text 2",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "db8eaaba-3ed6-4f99-abda-0bf9653b83ca",
+          "Alias": "longerText1",
+          "DataType": "umb://data-type/25e1de8f363d433e98f517b8058ebaff",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Longer text 1",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "f0e095a6-1b07-46bf-807e-5a63fd1dfdc3",
+          "Alias": "shortText4",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Short text 4",
+          "SortOrder": 7,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/caacf1c3282243a2849a9f786e5cb1de",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0a24e61ad33242e59abb9669b3b31d39",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/25e1de8f363d433e98f517b8058ebaff",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/43910b76b1b943e298a9c04e9f2db313",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9a906561564c4fe68e4316368d0275b1",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/9ecd1cbfbeb149099fcf944bef085cdf",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Selling points",
+  "Alias": "sellingPoints",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

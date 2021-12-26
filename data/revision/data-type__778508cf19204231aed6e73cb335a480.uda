@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.TrueFalse",
+  "DatabaseType": 2,
+  "PreValues": {
+    "default": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/778508cf19204231aed6e73cb335a480",
+  "Dependencies": [],
+  "Name": "Game Page - TrueFalse",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

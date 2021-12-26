@@ -1,0 +1,78 @@
+{
+  "DefaultTemplate": "umb://template/1bd5da3ec5d84e5fa78239e2b3dacabd",
+  "AllowedTemplates": [
+    "umb://template/1bd5da3ec5d84e5fa78239e2b3dacabd"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [
+    "umb://document-type/556d6aad5dae4833ae7b3684e1a818b3"
+  ],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "2660fb83-e4f7-4415-a7ee-d874674e77c0",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "31cb3df6-5eb0-4f8c-a074-6e75ba1620b3",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "35df2430-d156-40f5-a476-0de3d084218f",
+          "Alias": "text",
+          "DataType": "umb://data-type/5408ab48ec584a48aea96a83b0dfad69",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Text",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/44d1b720c7ed4eac962bc63a34af3835",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/5408ab48ec584a48aea96a83b0dfad69",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/556d6aad5dae4833ae7b3684e1a818b3",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/1bd5da3ec5d84e5fa78239e2b3dacabd",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "About us",
+  "Alias": "aboutUs",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

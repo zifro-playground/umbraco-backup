@@ -1,0 +1,79 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/11b8182f18d840bd835afc0362f70162",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "cd07e26e-a0c7-4403-ab94-fa52e795a67a",
+      "Name": "Settings",
+      "SortOrder": 10,
+      "PropertyTypes": [
+        {
+          "Key": "5bf9d14d-d818-40a4-bd4a-ae6e6ea466e9",
+          "Alias": "umbracoNaviHide",
+          "DataType": "umb://data-type/6fbfe5ad41f34eefa04c16b1b1c03dfa",
+          "Description": "Check this if you don't want the page to display in menus and lists. (checked box yields that .IsVisible => false)",
+          "Mandatory": false,
+          "Name": "Hide In Navigation",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "b3b07cdb-1edd-4d8a-9ba9-6eddd62e1473",
+          "Alias": "umbracoUrlName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Custom URL",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "ec9ad210-7e03-43b3-8eb6-5d136aadf3d6",
+          "Alias": "premiumOnly",
+          "DataType": "umb://data-type/dfaac0df2dc44b68b339984714c63e2d",
+          "Description": "If the node should only be available for members that are part of the \"premium\" group.",
+          "Mandatory": false,
+          "Name": "Premium Only",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/7da4ff540ae6479eb090cb3042ce8986",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/6fbfe5ad41f34eefa04c16b1b1c03dfa",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/dfaac0df2dc44b68b339984714c63e2d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/11b8182f18d840bd835afc0362f70162",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Settings",
+  "Alias": "settings",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,106 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109737137-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-109737137-1');
+    </script>
+
+    @{
+        // Check for title
+        string title;
+        if (Model.Content.GetPropertyValue("title") != null && Model.Content.GetPropertyValue("title").ToString() != "")
+        {
+            title = Model.Content.GetPropertyValue("title").ToString();
+        }
+        else
+        {
+            title = Model.Content.Name;
+        }
+        
+        // Check for image
+        string previewImageUrl;
+        if (Model.Content.GetPropertyValue<IPublishedContent>("previewImage") != null)
+        {
+            var image = Model.Content.GetPropertyValue<IPublishedContent>("previewImage");
+            previewImageUrl = image.Url;
+        }
+        else
+        {
+            previewImageUrl = "/media/1057/zifro_dark_medium.png";
+        }
+    }
+
+    <title> Zifro – @title </title> 
+
+    <!-- META TAGS-->
+    <meta charset="utf-8">
+    <meta name="viewport"       content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <meta name="description"    content="@Model.Content.GetPropertyValue("description")" >
+    <meta name="keywords"       content="@Model.Content.GetPropertyValue("keywords")" >
+    <meta name="author"         content="Zifro" >
+
+    <meta property="og:title"   content="@title" />
+    <meta property="og:type"    content="article" />
+    <meta property="og:url"     content="https://www.zifro.se/"/>
+    <meta property="og:description" content="@Model.Content.GetPropertyValue("description")" />
+    <meta property="og:image"   content="@previewImageUrl" >
+
+	<link rel="icon" type="image/png" href="/media/1014/diamond_icon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/css/animate.css")">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" >
+    <link rel="stylesheet" href="@Url.Content("~/css/timeline-story.css")" >
+    <link rel="stylesheet" href="@Url.Content("~/css/activities.css")" >
+	<link rel="stylesheet" href="@Url.Content("~/css/codeguide.css")" >
+
+    <!-- Import Raleway font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" >
+
+    <!-- Import Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    <!-- Bootstrap core/Jquery JavaScript -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <!-- <script src="@Url.Content("~/scripts/jquery.js")"></script> -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+
+    <!-- COOKIE CONSENT -->
+    <!-- From https://cookieconsent.insites.com/ -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script src="@Url.Content("~/scripts/cookie-consent.js")"></script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    @Html.Partial("NavBar")
+
+    @RenderBody()
+
+    <!-- Footer -->
+    @Html.Partial("Footer")
+
+    <script src="@Url.Content("~/scripts/bootstrap.js")"></script>
+    <!-- <script src="~/scripts/smooth-scrolling.js"></script> -->
+
+  </body>
+
+</html>

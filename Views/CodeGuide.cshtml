@@ -1,0 +1,50 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.CodeGuide>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header class="bg-code-guide text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1>@Model.Content.Name</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="no-min-height" id="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <h3>
+                    @Model.Content.Title
+                </h3>
+
+				<p>
+					@Model.Content.IntroText
+				</p>
+				@{
+					var codeConcepts = @Model.Content.Children("codeGuideItem").
+										Where(x => x.IsVisible());
+				}
+				<div class="code-concept-grid">
+					@foreach(var codeConcept in codeConcepts)
+					{
+						<a href="@codeConcept.Url" style="text-decoration: none;">
+							<div class="card code-concept-card">
+								<div class="code-concept-body">
+									<h5>
+										@codeConcept.Name
+									</h5>
+								</div>
+							</div>
+						</a>
+					}
+				</div>
+			</div>
+        </div>
+    </div>
+</section>

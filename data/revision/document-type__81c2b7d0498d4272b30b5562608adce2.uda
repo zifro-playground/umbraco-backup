@@ -1,0 +1,367 @@
+{
+  "DefaultTemplate": "umb://template/754e16a6232a4d0881bbbf590ce38a36",
+  "AllowedTemplates": [
+    "umb://template/754e16a6232a4d0881bbbf590ce38a36"
+  ],
+  "Icon": "icon-forms-file-powerpoint color-blue",
+  "Thumbnail": "folder.png",
+  "Description": "Teacher material corresponding to one lesson module (\"Moment\")",
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+  "AllowedChildContentTypes": [
+    "umb://document-type/213a3e7f7bc84d29bbc281af0e531da9",
+    "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1"
+  ],
+  "CompositionContentTypes": [
+    "umb://document-type/7da4ff540ae6479eb090cb3042ce8986"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "2e41ceb9-06a7-4228-b1b7-823036157db7",
+      "Name": "Extra Support",
+      "SortOrder": 3,
+      "PropertyTypes": [
+        {
+          "Key": "4de21bd4-e390-4155-abd7-2a2f8a25f680",
+          "Alias": "activityCommonMistakes",
+          "DataType": "umb://data-type/88e479dc351e4fdfa199e45f9b367ef6",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Common Mistakes",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "e895ce7d-aa08-4415-a201-4b0ef4cb0f50",
+          "Alias": "activitySolutions",
+          "DataType": "umb://data-type/81a964bc70c846a993068077d3800e14",
+          "Description": "Solutions to all levels in Playground",
+          "Mandatory": false,
+          "Name": "Solutions",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "f1e9ae1d-9fed-4fd7-b3a6-7f218c790bda",
+          "Alias": "activityTipsAndTricks",
+          "DataType": "umb://data-type/c1ea45c563484881865f25f88a9a6e4a",
+          "Description": "The three most common errors that students make and how to solve them.",
+          "Mandatory": false,
+          "Name": "Tips & Trix",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "792775b5-02f3-4aa6-b8cb-f47acb2b1124",
+      "Name": "Activity Content",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "5cac0fd3-7a97-4e6f-bf57-c87b011df602",
+          "Alias": "activitySummaryText",
+          "DataType": "umb://data-type/0c4434321fae47daaf18b38b47eb88a4",
+          "Description": "Ending presentations/discussions at the end of the activity.",
+          "Mandatory": false,
+          "Name": "Summary Text",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "660fcf7b-d1f4-4740-8aba-23557d2b3863",
+          "Alias": "activityIntroductionText",
+          "DataType": "umb://data-type/7fceb0db10de4633a6c42d6a737647c0",
+          "Description": "Introducing the activity in the class",
+          "Mandatory": false,
+          "Name": "Introduction Text",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "90eea738-67bf-4f6d-a7a7-a3510f29d76a",
+          "Alias": "playgroundIntro",
+          "DataType": "umb://data-type/4dc3e7eec34a40b29b03846e5efa17d4",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Intro",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "a74a61da-fc75-46a5-bf60-f7cba8203bd0",
+          "Alias": "playgroundDuration",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Estimated duration of Playground module. Takes a string, for example \"30-40\". Don't invlude the unit (min) – this will be added in the template.",
+          "Mandatory": false,
+          "Name": "Playground Duration",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "b8640c1f-6d91-4527-961b-7464fbeb15fa",
+          "Alias": "activitySummaryTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Summary Title",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "bf360e94-c581-4f9b-877b-e3bc74f97bbc",
+          "Alias": "activitySummaryDuration",
+          "DataType": "umb://data-type/17fa4acddb9a4fdb9c3925b196c9b904",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Summary Duration",
+          "SortOrder": 6,
+          "Validation": null
+        },
+        {
+          "Key": "c9aada12-1d50-4b2e-a270-34e95ffcf113",
+          "Alias": "activityIntroductionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Introduction Title",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "d1e55839-9966-4a80-b2ab-6b87464233c4",
+          "Alias": "activityIntroductionDuration",
+          "DataType": "umb://data-type/86a29c13966b408886b8db1aaf5efaae",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Introduction Duration",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "99ece358-cb48-4727-884a-ce44221cd743",
+      "Name": "Introduction",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "062de0cf-3335-4f0d-a300-be494f1c3044",
+          "Alias": "curriculum",
+          "DataType": "umb://data-type/95f6ff17650a47fb8896b6f2cdedd8ad",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Curriculum",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "6790b5ca-a15c-42b1-8d5f-107c04d1c02d",
+          "Alias": "codeTagsIntroducing",
+          "DataType": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+          "Description": "Note! Only tags with corresponding code guide pages should be used. That is, there has to be a page at /kodguide/xxx if you are to use the tag \"xxx\".",
+          "Mandatory": false,
+          "Name": "Code Tags (Introducing)",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "8204ea21-469d-4b11-a0d1-209ad29df037",
+          "Alias": "mathTags",
+          "DataType": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Math Tags",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "b20dff72-fda1-4489-8bb4-3f3c0a5540c5",
+          "Alias": "playgroundActivity",
+          "DataType": "umb://data-type/cacadf4bd0b4498da8567ed9e8220f9f",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Playground Activity",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "ca302821-3b85-403f-9e12-c79b80084469",
+          "Alias": "activityDescription",
+          "DataType": "umb://data-type/9a480fe58e7c4165ada8be4e766a24b3",
+          "Description": "A short description of the activity.",
+          "Mandatory": false,
+          "Name": "Description",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "cd475a4e-f185-49b2-83af-789dfbac2f67",
+          "Alias": "activityDuration",
+          "DataType": "umb://data-type/982af5b34f8f4924b341bdac9e2d224d",
+          "Description": "The time it takes to do the activity.",
+          "Mandatory": false,
+          "Name": "Duration",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "d926e9c5-0ea9-46fb-a5f6-669a684ee744",
+          "Alias": "activityThumbnail",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "The image displayed in the activity list. Should be quadratic.",
+          "Mandatory": false,
+          "Name": "Thumbnail",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "e219933f-8ebf-443e-bb52-485eb3c374c0",
+          "Alias": "codeTagsUsing",
+          "DataType": "umb://data-type/eb9dc2aed4ae46b8928b22e83d4870da",
+          "Description": "Note! Only tags with corresponding code guide pages should be used. That is, there has to be a page at /kodguide/xxx if you are to use the tag \"xxx\".",
+          "Mandatory": false,
+          "Name": "Code Tags (Using)",
+          "SortOrder": 6,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "b298e511-d2a2-40ec-b381-8748362e136e",
+      "Name": "Settings",
+      "SortOrder": 10,
+      "PropertyTypes": [
+        {
+          "Key": "0e5ff2fa-b8c5-4e0d-8ee5-f3e0b3391d09",
+          "Alias": "disabled",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": "If true the activity will not be clickable and have lower opacity.",
+          "Mandatory": false,
+          "Name": "Disabled",
+          "SortOrder": 1,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/81c2b7d0498d4272b30b5562608adce2",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0c4434321fae47daaf18b38b47eb88a4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/17fa4acddb9a4fdb9c3925b196c9b904",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/4dc3e7eec34a40b29b03846e5efa17d4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/7fceb0db10de4633a6c42d6a737647c0",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/81a964bc70c846a993068077d3800e14",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/86a29c13966b408886b8db1aaf5efaae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/88e479dc351e4fdfa199e45f9b367ef6",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/95f6ff17650a47fb8896b6f2cdedd8ad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/982af5b34f8f4924b341bdac9e2d224d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/9a480fe58e7c4165ada8be4e766a24b3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/b6b73142b9c14bf8a16de1c23320b549",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c1ea45c563484881865f25f88a9a6e4a",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/cacadf4bd0b4498da8567ed9e8220f9f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/eb9dc2aed4ae46b8928b22e83d4870da",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/213a3e7f7bc84d29bbc281af0e531da9",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7da4ff540ae6479eb090cb3042ce8986",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3c0ea3b2ecfe41d99f54d2d16e649055",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/754e16a6232a4d0881bbbf590ce38a36",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Activity Item",
+  "Alias": "activityItem",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

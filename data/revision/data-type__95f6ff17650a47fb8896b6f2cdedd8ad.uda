@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.MarkdownEditor",
+  "DatabaseType": 0,
+  "PreValues": {
+    "defaultValue": null,
+    "preview": "1"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/95f6ff17650a47fb8896b6f2cdedd8ad",
+  "Dependencies": [],
+  "Name": "Activity Item - Curriculum - Markdown editor",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

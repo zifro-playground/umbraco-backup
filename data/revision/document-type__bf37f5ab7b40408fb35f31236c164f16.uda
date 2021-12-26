@@ -1,0 +1,74 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": ".sprTreeFolder",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "e52f335e-9c6e-4094-b1a4-c6857c2ca4ca",
+      "Name": "Author info",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "3652c2c4-e36b-40c1-a44c-b3ad818995c1",
+          "Alias": "authorImage",
+          "DataType": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+          "Description": "",
+          "Mandatory": false,
+          "Name": "Author Image",
+          "SortOrder": 0,
+          "Validation": ""
+        },
+        {
+          "Key": "8db8bdc6-2708-4c3e-812a-e1bccbaf2abf",
+          "Alias": "authorUrl",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "A url to link to the author's website",
+          "Mandatory": false,
+          "Name": "Author Url",
+          "SortOrder": 1,
+          "Validation": ""
+        },
+        {
+          "Key": "f1153f35-978b-4fde-87a4-bb998c92514a",
+          "Alias": "authorBio",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Description of the author",
+          "Mandatory": false,
+          "Name": "Author Bio",
+          "SortOrder": 2,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/bf37f5ab7b40408fb35f31236c164f16",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c8f535ee27b84d16940dd6c523851bb1",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Articulate Author",
+  "Alias": "ArticulateAuthor",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,58 @@
+{
+  "DefaultTemplate": "umb://template/06766a0faa154d198a00ddc09e46825d",
+  "AllowedTemplates": [
+    "umb://template/06766a0faa154d198a00ddc09e46825d"
+  ],
+  "Icon": "icon-arrow-up",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "c01d954b-eb66-4dee-a290-b4abf51bbe14",
+      "Name": "Upgrade Codes",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "4a6ad516-6bf4-445d-9947-7b4070a2c829",
+          "Alias": "codes",
+          "DataType": "umb://data-type/7a5b8bf3f0544ab9ae8c85d6c9208382",
+          "Description": "The codes that are valid to use for upgrading from Trial to Premium",
+          "Mandatory": false,
+          "Name": "Codes",
+          "SortOrder": 0,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/854b1257b4134a3e8145e7f9bcb516e7",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/7a5b8bf3f0544ab9ae8c85d6c9208382",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/06766a0faa154d198a00ddc09e46825d",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Upgrade Page",
+  "Alias": "upgradePage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

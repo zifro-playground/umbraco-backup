@@ -1,0 +1,252 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.CampaignPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header id="header" class="header-campaign-page bg-z-dark text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h1 class="header-title">
+                    @Model.Content.Title
+                </h1>
+
+                <h2 class="mb-4"> 
+                    @Model.Content.Subtitle
+                </h2>
+                
+                <p>
+                    <a href="#offer" class="float-right text-gray">
+                        Läs mer <i class="fas fa-arrow-circle-down"></i>
+                    </a>
+                </p>
+                
+                <a href="/registrera/" class="btn btn-primary btn-cta m-3" role="button">
+                    @Model.Content.ButtonText
+                </a>
+
+
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="intro" class="no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                @Model.Content.IntroText
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="bg-z-purple text-white no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title mb-4">
+                    @Model.Content.WhyTitle 
+                </h2>
+
+                <div class="row justify-content-around">
+                    
+                    <div class="col-lg-4">
+                        <h4>
+                            1. SPARA TID
+                        </h4>
+                        <p>
+                            Välj mellan våra kompletta aktiviteter med förberedda genomgångar och spara värdefull förberedelsetid.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h4>
+                            2. LÄR DIG PÅ VÄGEN
+                        </h4>
+                        <p>
+                            Om du inte redan känner dig bekväm med programmering kommer du att lära dig tillsammans med dina elever.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h4>
+                            3. KOM IGÅNG SNABBT
+                        </h4>
+                        <p>
+                            Att skapa ett lärarkonto tar mindre än 1 minut och du kommer sen igång med dina elever lika snabbt.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offer" class="bg-z-dark text-white no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title mb-4">
+                    <i class="fas fa-rocket mr-2"></i> 
+                    @Model.Content.OfferTitle 
+                </h2>
+
+                <blockquote class="blockquote mb-4">
+                    @Model.Content.OfferDescription
+                </blockquote>
+
+                <ol>
+                    <li class="mb-4">
+                        <h5> KOM IGÅNG DIREKT </h5>
+                        <p> 
+                            För att komma igång skapar du som lärare ett konto <a href="/registrera" class="text-gray">här</a>. Då kan du se alla aktiviteter som finns tillgänliga att göra med dina elever. Sen kan du låta dina elever skapa konto lika enkelt, och vara igång och koda efter 10 minuter. 
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <h5> ANVÄND FRITT UNDER HT18 </h5>
+                        <p> 
+                            Du och dina elever kunna använda läromedlet året ut. 
+                        </p>    
+                    </li>
+                    <li class="mb-4">                        
+                        <h5> FATTA BESLUT I LUGN OCH RO </h5>
+                        <p> 
+                            Sen kan du och dina kollegor diskutera hur ni tycker att det har fungerat, och bestämma er för om ni vill fortsätta använda ZIFRO, och då köpa in licenser för era elever. Ni har inte förbundit er att betala någonting.
+                        </p>
+                    </li>
+                </ol>
+
+                <p>
+                    Tecknar ni licenserna innan 1 okt, får ni <strong>20%</strong> rabatt och innan 1 dec, får ni <strong>10%</strong> (från 14 jan 2019 gäller fullt pris).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="partners" class="no-min-height bg-z-purple text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title mb-4">
+                    Tillsammans förbättrar vi undervisningen i programmering 
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <h4>KTH Innovation</h4>
+                        <p>ZIFRO får stöd av <strong>KTH Innovation</strong>, bland annat genom KTH Innovations förinkubatorsprogram.</p>
+                    </div>
+                    <div class="col-md-4 mx-auto">
+                        <h4>Skolon Partner</h4>
+                        <p>ZIFRO är partner till <strong>Skolon</strong>, och inom kort kommer det gå att komma åt läromedlet från Skolons plattform.</p>
+                    </div>
+                    <div class="col-md-4 mx-auto">
+                        <h4>Partnerskolor</h4>
+                        <ul>
+                            <li> <strong>Sjöstadsskolan</strong>, Stockholms Stad </li>
+                            <li> <strong>Nya Elementar</strong>, Stockholms Stad </li>
+                            <li> <strong>Alfaskolan</strong>, Pysslingen, Solna </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+</section>
+
+<section id="product" class="no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title mb-4">
+                    Läromedlet har två sidor
+                </h2>
+
+                <div class="row justify-content-around">
+                    
+                    <div class="col-lg-5 text-center">
+                        <div class="icon-wrapper">
+                            <img src="/media/1019/teacher_icon.png" class="center" alt="ZIFRO TEACHER" height="130px">
+                        </div>
+                            <a href="#teacher" style="color:var(--teacher-color)" >
+                                <h4 class="">ZIFRO TEACHER&trade;</h4>
+                            </a>
+                        <p>
+                            Lärarna får allt material som behövs för att förbereda och hålla i programmeringslektioner.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-5 text-center">
+                        <div class="icon-wrapper" style="padding-top:30px;">
+                            <img src="/media/1018/playground_icon.png" class="center" alt="ZIFRO PLAYGROUND" height="100px">
+                        </div>
+                            <a href="#playground" style="color:var(--playground-color)">
+                                <h4 class="">ZIFRO PLAYGROUND&trade;</h4>
+                            </a>
+                        <p>
+                            Eleverna kodar i programmeringsspråket Python i vår egenutvecklade kodmiljö.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@{
+    var rootNodes       = Umbraco.TypedContentAtRoot();
+    var zifroHome       = rootNodes.FirstOrDefault(x => x.DocumentTypeAlias == "zifroHome");
+    var playgroundInfo  = zifroHome.Children.FirstOrDefault(x => x.DocumentTypeAlias == "playgroundInfo");
+    var teacherInfo     = zifroHome.Children.FirstOrDefault(x => x.DocumentTypeAlias == "teacherInfo");
+}
+@if (teacherInfo != null)
+{
+    @Umbraco.RenderTemplate( teacherInfo.Id, teacherInfo.TemplateId );
+}
+@if (playgroundInfo != null)
+{
+    @Umbraco.RenderTemplate( playgroundInfo.Id, playgroundInfo.TemplateId );
+}
+
+<section id="summary" class="bg-z-dark text-white no-min-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="section-title">
+                            Vill du testa ZIFRO i din undervisning?
+                        </h3>
+                        <p class="float-right">
+                            Du har inget att förlora! <i class="fas fa-arrow-right"></i>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="/registrera/" class="btn btn-primary btn-cta align-right" role="button">
+                            @Model.Content.ButtonText
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.MarkdownEditor",
+  "DatabaseType": 0,
+  "PreValues": {
+    "defaultValue": null,
+    "preview": "1"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/b11c7ff6fdea48bfbe692dcf31c218c7",
+  "Dependencies": [],
+  "Name": "Call to Action - Text - Markdown editor",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

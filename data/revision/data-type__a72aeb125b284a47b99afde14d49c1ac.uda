@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.Tags",
+  "DatabaseType": 1,
+  "PreValues": {
+    "group": "ArticulateCategories"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/a72aeb125b284a47b99afde14d49c1ac",
+  "Dependencies": [],
+  "Name": "Articulate Categories",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

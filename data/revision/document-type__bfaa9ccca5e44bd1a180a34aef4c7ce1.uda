@@ -1,0 +1,40 @@
+{
+  "DefaultTemplate": "umb://template/53e71ad4cb1d47a09ae3cd492e034c6e",
+  "AllowedTemplates": [
+    "umb://template/53e71ad4cb1d47a09ae3cd492e034c6e"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/bfaa9ccca5e44bd1a180a34aef4c7ce1",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/53e71ad4cb1d47a09ae3cd492e034c6e",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Forgot Password Page",
+  "Alias": "forgotPasswordPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

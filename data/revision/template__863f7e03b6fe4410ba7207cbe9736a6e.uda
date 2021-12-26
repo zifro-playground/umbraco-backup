@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/SkolonAuthPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/863f7e03b6fe4410ba7207cbe9736a6e",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/SkolonAuthPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Skolon Auth Page",
+  "Alias": "SkolonAuthPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,43 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Quotes>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+@{
+    var quoteItems = Model.Content.Children("quoteItem").Where(x => x.IsVisible());
+    int itemCounter = 0;
+}
+
+<section id="quotes" class="thin-section bg-z-purple text-white">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-10 mx-auto">
+            
+                <h2 class="section-title mb-4">
+                    @Model.Content.Title
+                </h2>
+            
+                <div class="row">
+                    @foreach (var item in quoteItems)
+                    {
+                        <div class="quote-item col-lg-4 mx-auto text-center">
+                            <blockquote class="blockquote">
+                                <p class="mb-3">
+                                    <i class="fas fa-quote-left mr-2 text-light-opac"></i>
+                                    @item.GetPropertyValue("Quote")
+                                    <i class="fas fa-quote-right ml-2 text-light-opac"></i>
+                                </p>
+                                <footer class="blockquote-footer text-white">
+                                    @item.GetPropertyValue("Reference")
+                                </footer>
+                            </blockquote>
+                        </div>
+                    }
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+</section>

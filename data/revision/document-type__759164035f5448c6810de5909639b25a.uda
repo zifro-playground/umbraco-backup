@@ -1,0 +1,28 @@
+{
+  "DefaultTemplate": "umb://template/2554bb35ba134c1abc2e39350ea91a1c",
+  "AllowedTemplates": [
+    "umb://template/2554bb35ba134c1abc2e39350ea91a1c"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/759164035f5448c6810de5909639b25a",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/2554bb35ba134c1abc2e39350ea91a1c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Export Members",
+  "Alias": "exportMembers",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

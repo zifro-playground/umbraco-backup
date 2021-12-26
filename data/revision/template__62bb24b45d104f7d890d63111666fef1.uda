@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/StoryItem.cshtml",
+  "Master": null,
+  "Udi": "umb://template/62bb24b45d104f7d890d63111666fef1",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/StoryItem.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Story item",
+  "Alias": "StoryItem",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ProductIntro>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section id="product-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                
+                <h2 class="section-title">@Model.Content.SectionTitle</h2>
+                <h6 class="section-subtitle">@Model.Content.SectionSubtitle</h6>
+                
+                <div class="row justify-content-center mt-5">
+                    
+                    <div class="col-md-5 text-center">
+                        <div style="min-height: 300px;">
+                            <div class="icon-wrapper">
+                                <a href="#teacher">
+                                    <img src="/media/1019/teacher_icon.png" class="center animated-clickable" alt="ZIFRO TEACHER" height="130px">
+                                </a>
+                            </div>
+                            <a href="#teacher" style="color:var(--teacher-color)" >
+                                <h4 class="">ZIFRO TEACHER&trade;</h4>
+                            </a>
+                            <p>@Model.Content.TeacherText</p>
+                        </div>
+                        <a href="#teacher" style="color:var(--zifro-purple);">
+                            <i class="fas fa-chevron-circle-down"></i>
+                            @Umbraco.GetDictionaryValue("ReadMore")
+                        </a>
+                    </div>
+
+                    <div class="col-md-5 text-center">
+                        <div style="min-height: 300px;">
+                            <div class="icon-wrapper" style="padding-top:30px;">
+                                <a href="#playground">
+                                    <img src="/media/1018/playground_icon.png" class="center animated-clickable" alt="ZIFRO PLAYGROUND" height="100px">
+                                </a>
+                            </div>
+                            <a href="#playground" style="color:var(--playground-color)">
+                                <h4 class="">ZIFRO PLAYGROUND&trade;</h4>
+                            </a>
+                            <p>@Model.Content.PlaygroundText</p>
+                        </div>
+                        <a href="#playground" style="color:var(--zifro-green);">
+                            <i class="fas fa-chevron-circle-down"></i>
+                            @Umbraco.GetDictionaryValue("ReadMore")
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

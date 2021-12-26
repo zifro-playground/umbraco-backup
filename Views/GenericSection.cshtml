@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.GenericSection>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+
+	var backgroundColor = Model.Content.GetPropertyValue<string>("backgroundColor");
+	var textColorClass = "";
+
+	if (backgroundColor.ToLower() != "ffffff"){
+		textColorClass = "text-white";
+	}
+}
+
+<section class="@textColorClass thin-section" style="background-color: #@backgroundColor" id="@Model.Content.SectionID">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title"> @Model.Content.SectionTitle</h2>
+                
+                <h5 class="section-subtitle mb-5">@Model.Content.SectionSubtitle</h5>
+                
+                <p>@Model.Content.Text</p>
+
+				@{
+                    var buttonText = Model.Content.GetPropertyValue<string>("buttonText");
+					var buttonLink = Model.Content.GetPropertyValue<string>("buttonLink");
+					var buttonColor = Model.Content.GetPropertyValue<string>("buttonColor");
+                }
+                @if(!String.IsNullOrEmpty(buttonText) && !String.IsNullOrEmpty(buttonLink))
+				{
+					<a href="@buttonLink" class="btn btn-cta ml-3 mt-3" style="background-color: #@buttonColor; color: white" role="button">
+						@buttonText
+					</a>
+				}
+            </div>
+        </div>
+    </div>
+</section>

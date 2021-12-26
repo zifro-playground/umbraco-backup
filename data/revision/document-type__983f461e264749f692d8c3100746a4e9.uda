@@ -1,0 +1,40 @@
+{
+  "DefaultTemplate": "umb://template/d6c36158d9824d5d9940487bc4a84460",
+  "AllowedTemplates": [
+    "umb://template/d6c36158d9824d5d9940487bc4a84460"
+  ],
+  "Icon": "icon-document",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/983f461e264749f692d8c3100746a4e9",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/8b8d9987d1354a398af7acee2269503d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d6c36158d9824d5d9940487bc4a84460",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Reset Password Page",
+  "Alias": "resetPasswordPage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.SellingPoints>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = null;
+}
+
+<section class="bg-z-dark text-white" id="why-zifro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title"> @Model.Content.SectionTitle </h2>
+                
+                <div class="row m-4 align-items-center">
+                    <div class="col-md-2 text-center pb-3">
+                        <i class="fas fa-clock fa-4x animate-hover"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <h5 style="text-transform: uppercase; text-weight: ">@Model.Content.ShortText1</h5>
+                        @Html.Raw(@Model.Content.LongerText1)
+                    </div>
+                </div>
+                
+                <div class="row m-4 align-items-center">
+                    <div class="col-md-2 text-center pb-3">
+                        <i class="fas fa-star fa-4x animate-hover"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <h5 style="text-transform: uppercase;">@Model.Content.ShortText2</h5>
+                        @Html.Raw(@Model.Content.LongerText2)
+                    </div>
+                </div>
+
+                <div class="row m-4 align-items-center">
+                    <div class="col-md-2 text-center pb-3">
+                        <i class="fas fa-check-circle fa-4x animate-hover"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <h5 style="text-transform: uppercase;">@Model.Content.ShortText3</h5>
+                        @Html.Raw(@Model.Content.LongerText3)
+                    </div>
+                </div>
+                
+                <div class="row mt-4 ml-4 mr-4 align-items-center">
+                    <div class="col-md-2 text-center pb-3">
+                        <i class="fas fa-rocket fa-4x animate-hover"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <h5 style="text-transform: uppercase;">@Model.Content.ShortText4</h5>
+                        @Html.Raw(@Model.Content.LongerText4)
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</section>

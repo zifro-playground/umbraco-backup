@@ -1,0 +1,14 @@
+{
+  "EditorAlias": "Umbraco.EmailAddress",
+  "DatabaseType": 1,
+  "PreValues": {
+    "IsRequired": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f5dcc912e7d94e01bc5812d0afb9ced6",
+  "Dependencies": [],
+  "Name": "Activity Overview - test - Email address",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.11"
+}

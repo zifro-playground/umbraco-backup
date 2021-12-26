@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<!-- THIS BREADCRUMB INCLUDES THE ROOT NODE (FOR EXAMPLE "PLAYGROUND") -->
+
+@{
+    var parentPage = Model.Content.Parent;
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent" style="margin:0px;">
+        @{
+            var path = Model.Content.Ancestors().OrderBy("Level");
+        }
+        @foreach( var node in path)
+        {
+            <li class="breadcrumb-item">
+                <a href="@node.Url">@node.Name</a>
+            </li>
+        }
+        <li class="breadcrumb-item active" aria-current="page">
+            @Model.Content.Name
+        </li>
+    </ol>
+</nav>

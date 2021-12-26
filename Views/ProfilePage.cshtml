@@ -1,0 +1,89 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ProfilePage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+
+@using Zifro.Models
+
+@{
+    Layout = "Master.cshtml";
+
+    var userName = Membership.GetUser().ToString();
+    var currentMember = ApplicationContext.Current.Services.MemberService.GetByUsername(userName);
+    //var xx = currentMember.GetValue("MemberType");
+
+    var changePWCardStatePart1 = "collapsed";
+    var changePWCardStatePart2 = "";
+    if (TempData["ShowChangePwCard"] != null && (bool)TempData["ShowChangePwCard"] || !ViewData.ModelState.IsValid)
+    {
+        changePWCardStatePart1 = "";
+        changePWCardStatePart2 = "show";
+    }
+}
+
+<script src="~/scripts/form-validation.js"></script>
+
+<header class="bg-z-dark text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1> Min Sida</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+
+                <div class="row pb-4">
+                    <div class="col-sm-2">
+                        <img src="/media/1017/sara_icon.png" width="100%" alt="icon">
+                    </div>
+                    <div class="col-sm-10">
+                        <p> <strong>Namn:</strong> @currentMember.Name </p>
+                        <p> <strong>Email:</strong> @currentMember.Email </p>
+                    </div>
+                </div>
+
+                <div class="row pb-4">
+                    <div class="col">
+
+                        <div class="card collapse-card">
+                            <div class="card-header" id="change-pw-title">
+                                <button class="btn btn-link @changePWCardStatePart1" data-toggle="collapse" data-target="#change-pw" aria-expanded="false" aria-controls="change-pw">
+                                    Ändra lösenord
+                                </button>
+                            </div>
+                            <div class="collapse @changePWCardStatePart2" id="change-pw" aria-labelledby="change-pw-title">
+                                <div class="card-body">
+                                    @{ Html.RenderPartial("~/Views/Partials/ChangePasswordPartial.cshtml", new ChangePasswordViewModel()); }
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card collapse-card">
+                            <div class="card-header" id="delete-account-title">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#delete-account" aria-expanded="false" aria-controls="delete-account">
+                                    Radera kontot
+                                </button>
+                            </div>
+                            <div class="collapse" id="delete-account" aria-labelledby="delete-account-title">
+                                <div class="card-body">
+                                    <p>Är du säker på att du vill radera ditt konto? Denna åtgärd går inte att ångra.</p>
+                                    <a class="btn btn-danger m-1" href="@Url.Action("DeleteAccount", "Profile")" role="button">Ja, radera kontot</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-outline-secondary mt-5" href="@Url.Action("Logout", "Login")" role="button">
+                            Logga ut
+                        </a>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

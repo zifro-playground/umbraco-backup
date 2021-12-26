@@ -1,0 +1,88 @@
+{
+  "DefaultTemplate": "umb://template/5dea055faecc4057a8db9fe29c415001",
+  "AllowedTemplates": [
+    "umb://template/5dea055faecc4057a8db9fe29c415001"
+  ],
+  "Icon": "icon-game color-green",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/312927e02abd495788b8ad9622c05e06",
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [
+    "umb://document-type/7da4ff540ae6479eb090cb3042ce8986"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "f9238c4e-f2bb-4220-9823-91e3e99e8def",
+      "Name": "Content",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "3bf93af2-f009-4abf-908f-837775bf1628",
+          "Alias": "liveVersionNumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Version number for build visible for non-testers. If left empty \"no game available\" will show.",
+          "Mandatory": false,
+          "Name": "Live Version Number",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "715e0477-fdfd-4d08-8c17-7bd19dd0ab08",
+          "Alias": "testVersionNumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Version number for build visible for members of group \"Tester\". If left empty \"no game available\" will show.",
+          "Mandatory": false,
+          "Name": "Test Version Number",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "d349f720-7548-4879-b6e2-5cda7a12e13f",
+          "Alias": "folderName",
+          "DataType": "umb://data-type/c287c000d74f4a5c9d392831ea962c6d",
+          "Description": "The name of the folder that holds the build folders for current activity.",
+          "Mandatory": true,
+          "Name": "Folder Name",
+          "SortOrder": 0,
+          "Validation": ""
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/5cd2307f0888437cb9dd39b6cea5dce1",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c287c000d74f4a5c9d392831ea962c6d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7da4ff540ae6479eb090cb3042ce8986",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/312927e02abd495788b8ad9622c05e06",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/5dea055faecc4057a8db9fe29c415001",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Game Page",
+  "Alias": "gamePage",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.11"
+}

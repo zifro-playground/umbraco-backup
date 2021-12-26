@@ -1,0 +1,179 @@
+{
+  "Icon": "icon-user",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": false,
+  "IsContainer": false,
+  "Parent": null,
+  "AllowedChildContentTypes": [],
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "7972e883-d1ca-40a8-b33c-b2d87335665b",
+      "Name": "General Information",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "a16fb413-8b16-4634-966a-b0c427c2a96e",
+          "Alias": "phoneNumber",
+          "DataType": "umb://data-type/21d428e1df3a412f9937064755a25317",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Phone Number",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "dc56779f-2124-4ff2-86d5-21bdb987554c",
+          "Alias": "resetGUID",
+          "DataType": "umb://data-type/5aa251483eb149e9af6a03a04a5943cf",
+          "Description": "Is set when user presses \"reset password\"",
+          "Mandatory": false,
+          "Name": "Reset GUID",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "df24cd0d-7b2e-4bf3-96c7-0e7cfb87be3c",
+          "Alias": "acceptedUserAgreement",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Accepted User Agreement",
+          "SortOrder": 2,
+          "Validation": null
+        }
+      ]
+    },
+    {
+      "Key": "edb825ca-8b56-43f7-a276-4822569f2e0b",
+      "Name": "Membership",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "20992432-0285-4f17-9d33-1ad54d801453",
+          "Alias": "umbracoMemberLastLogin",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Login Date",
+          "SortOrder": 5,
+          "Validation": null
+        },
+        {
+          "Key": "2692f633-9481-4c01-aba1-e40013911cdc",
+          "Alias": "umbracoMemberLastLockoutDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Lockout Date",
+          "SortOrder": 4,
+          "Validation": null
+        },
+        {
+          "Key": "4146bf07-0e5f-43c2-ab73-3a95fa086296",
+          "Alias": "umbracoMemberPasswordRetrievalAnswer",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Password Answer",
+          "SortOrder": 7,
+          "Validation": null
+        },
+        {
+          "Key": "59187278-b342-42e6-bb63-cb9031cf85e5",
+          "Alias": "umbracoMemberLockedOut",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Locked Out",
+          "SortOrder": 3,
+          "Validation": null
+        },
+        {
+          "Key": "76272b1e-92a2-41f7-b8ae-a0acecaf9ac5",
+          "Alias": "umbracoMemberFailedPasswordAttempts",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Failed Password Attempts",
+          "SortOrder": 1,
+          "Validation": null
+        },
+        {
+          "Key": "aaab6857-efed-4060-9a31-d46464cd774d",
+          "Alias": "umbracoMemberComments",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Comments",
+          "SortOrder": 0,
+          "Validation": null
+        },
+        {
+          "Key": "e41cd3f7-274d-4a30-8c8a-9c0900bbec16",
+          "Alias": "umbracoMemberApproved",
+          "DataType": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Is Approved",
+          "SortOrder": 2,
+          "Validation": null
+        },
+        {
+          "Key": "e5a3c4f2-b041-4c3a-9d60-36f7f72d1f1f",
+          "Alias": "umbracoMemberPasswordRetrievalQuestion",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Password Question",
+          "SortOrder": 8,
+          "Validation": null
+        },
+        {
+          "Key": "fd3f1225-0b75-40a7-8b25-d257f5757c7c",
+          "Alias": "umbracoMemberLastPasswordChangeDate",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Description": null,
+          "Mandatory": false,
+          "Name": "Last Password Change Date",
+          "SortOrder": 6,
+          "Validation": null
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://member-type/dd49c5fea84546799e860405c8c9f5f1",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/21d428e1df3a412f9937064755a25317",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/5aa251483eb149e9af6a03a04a5943cf",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/92897bc6a5f34ffeae27f2e7e33dda49",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Other",
+  "Alias": "other",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.MemberTypeArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,9 @@
+{
+  "IsoCode": "sv-SE",
+  "Alias": "sv-SE",
+  "Udi": "umb://language/sv-SE",
+  "Dependencies": [],
+  "Name": "Swedish (Sweden)",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.LanguageArtifact",
+  "__version": "2.0.14"
+}

@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Articulate.MarkdownEditor",
+  "DatabaseType": 0,
+  "PreValues": {
+    "defaultValue": null,
+    "preview": null
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/4d5fad0fa5354d9e8f87d7dd37ea3c03",
+  "Dependencies": [],
+  "Name": "Quote item - Reference - Articulate Markdown editor",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}

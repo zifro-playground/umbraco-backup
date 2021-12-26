@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ActivityOverview>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<header class="bg-activities text-white header-thin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                
+                <h1>@Model.Content.Name</h1>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-8 mx-auto">
+
+                @Model.Content.GetPropertyValue("activitiesOverviewIntro")
+        
+                @Umbraco.RenderMacro("ActivityList")
+
+                @Model.Content.GetPropertyValue("bottomText")
+
+            </div>
+        </div>    
+    </div>
+</section>

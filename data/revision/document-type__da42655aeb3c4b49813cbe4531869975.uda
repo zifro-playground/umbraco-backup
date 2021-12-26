@@ -1,0 +1,131 @@
+{
+  "DefaultTemplate": "umb://template/889fe498fd96404b860e416b893832a4",
+  "AllowedTemplates": [
+    "umb://template/889fe498fd96404b860e416b893832a4"
+  ],
+  "Icon": "icon-home",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "AllowedAtRoot": true,
+  "IsContainer": false,
+  "Parent": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+  "AllowedChildContentTypes": [
+    "umb://document-type/1e7083d741564f6e8828c72d7cb828cc",
+    "umb://document-type/237d3df9b4104f898fcbad7f2df1b1c7",
+    "umb://document-type/23aed515867148eb8b6a9573e09b1e95",
+    "umb://document-type/44d1b720c7ed4eac962bc63a34af3835",
+    "umb://document-type/4ec49076a94b470d8ebc7400b09af8bf",
+    "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+    "umb://document-type/77114c9c33a24ef19a7a92add166f618",
+    "umb://document-type/7734bd29972e4017ae9e691bfe03d010",
+    "umb://document-type/7b721599d6de4ad08511c4f273a6756d",
+    "umb://document-type/a40daf3683934d8d88ebdf3aa3567492",
+    "umb://document-type/bb101ed677ac48daad84e334624b0249",
+    "umb://document-type/beeb6dee4876463baa3fcb2ffae6994b",
+    "umb://document-type/caacf1c3282243a2849a9f786e5cb1de",
+    "umb://document-type/ecf414f68c2a44af87e6de3e52bb06fd",
+    "umb://document-type/ed8c09eb8127449c9a0fd67326344495"
+  ],
+  "CompositionContentTypes": [
+    "umb://document-type/4655790d1e4143898db4be8d5439cc82"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/da42655aeb3c4b49813cbe4531869975",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/1e7083d741564f6e8828c72d7cb828cc",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/237d3df9b4104f898fcbad7f2df1b1c7",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/23aed515867148eb8b6a9573e09b1e95",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/44d1b720c7ed4eac962bc63a34af3835",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4655790d1e4143898db4be8d5439cc82",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/4ec49076a94b470d8ebc7400b09af8bf",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/55c684b9a71d4ef3bdacc4668a84ea6c",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/77114c9c33a24ef19a7a92add166f618",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7734bd29972e4017ae9e691bfe03d010",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/7b721599d6de4ad08511c4f273a6756d",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/a40daf3683934d8d88ebdf3aa3567492",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/bb101ed677ac48daad84e334624b0249",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/beeb6dee4876463baa3fcb2ffae6994b",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/caacf1c3282243a2849a9f786e5cb1de",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/ecf414f68c2a44af87e6de3e52bb06fd",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/ed8c09eb8127449c9a0fd67326344495",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/4623123d2f3e47e0a4df6e9d829c3eac",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/889fe498fd96404b860e416b893832a4",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Zifro Home",
+  "Alias": "zifroHome",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DocumentTypeArtifact",
+  "__version": "2.0.14"
+}

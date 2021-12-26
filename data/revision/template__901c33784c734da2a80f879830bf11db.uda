@@ -1,0 +1,16 @@
+{
+  "File": "umb://template-file/Team.cshtml",
+  "Master": null,
+  "Udi": "umb://template/901c33784c734da2a80f879830bf11db",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Team.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Team",
+  "Alias": "Team",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.TemplateArtifact",
+  "__version": "2.0.14"
+}

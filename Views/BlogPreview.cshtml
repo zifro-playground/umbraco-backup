@@ -1,0 +1,47 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.BlogPreview>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Articulate;
+@using Articulate.Models;
+
+@{
+	Layout = null;
+}
+
+<section class="bg-z-dark text-white thin-section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+
+                <h2 class="section-title mb-5"> @Model.Content.BlogPreviewTitle </h2>
+                
+                @{
+                    var blogArchive = Umbraco.TypedContentAtXPath("//ArticulateArchive").FirstOrDefault();
+                    var post = blogArchive.Children().Last();
+                    var postDate = post.GetPropertyValue<DateTime>("PublishedDate").ToString("yyyy-MM-dd");
+                }
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card blog-preview-post">
+                            <div class="card-body">
+                                <h4 class="post-title"><a href="@post.Url">@post.Name</a></h4>
+                                <time datetime="@postDate">
+                                    <p style="color: #686b6f">@postDate</p>
+                                </time>
+                                <p>@post.GetPropertyValue("Excerpt")</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>@Model.Content.BlogPreviewText</p>
+                        <p><a href="@blogArchive.Url" class="text-white">
+                            <i class="fa fa-chevron-circle-right"></i>
+                            @Model.Content.ButtonText
+                        </a></p> 
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</section>

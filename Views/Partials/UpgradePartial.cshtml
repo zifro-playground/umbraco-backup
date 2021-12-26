@@ -1,0 +1,33 @@
+﻿@using Zifro.Controllers
+@model Zifro.Models.UpgradeViewModel
+
+@using (Html.BeginUmbracoForm<UpgradeController>("UpgradeToPremium", null, new {@class = "needs-validation", @novalidate = "novalidate", @id = "upgrade-form"}))
+{
+    @Html.AntiForgeryToken()
+    ;
+
+    if (ViewData.ModelState[""] != null && ViewData.ModelState[""].Errors.Any())
+    {
+        <div class="alert alert-danger hide-if-empty" role="alert">
+            @Html.ValidationSummary(true)
+        </div>
+    }
+
+    <fieldset>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Code, new {@class = "sr-only"})
+            @Html.TextBoxFor(model => model.Code, new {@class = "form-control", @placeholder = "Kod", @required = "required"})
+            @Html.ValidationMessageFor(model => model.Code)
+            <div class="invalid-feedback">Skriv din kod för uppgradering.</div>
+        </div>
+
+        @if (TempData["UpgradeSuccess"] != null)
+        {
+            <div class="alert alert-success">@TempData["UpgradeSuccess"].ToString()</div>
+        }
+
+        <p>
+            <input class="btn btn-secondary" type="submit" value="Uppgradera"/>
+        </p>
+    </fieldset>
+}

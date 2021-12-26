@@ -1,0 +1,15 @@
+{
+  "EditorAlias": "Umbraco.ContentPicker2",
+  "DatabaseType": 1,
+  "PreValues": {
+    "showOpenButton": "1",
+    "startNodeId": "umb://document/be5dd8eddf8f4367a9e8d200a8d2c791"
+  },
+  "Parent": null,
+  "Udi": "umb://data-type/f191d08cd87947be96d132d24bf3dca5",
+  "Dependencies": [],
+  "Name": "Code Concept Item - Related Tutorials - Content Picker",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "2.0.14"
+}
